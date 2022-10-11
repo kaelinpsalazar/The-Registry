@@ -1,3 +1,4 @@
-const Profile = require("./");
+const Gifter = require("./Gifter");
+const Receiver = require("./Receiver");
 
-module.exports = {};
+module.exports = { Gifter, Receiver };
