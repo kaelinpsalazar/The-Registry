@@ -1,20 +1,42 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { Gifter, Receiver, Gift } = require("../models");
+const { Gifter, Recipient, Gift } = require("../models");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
-    receiver: async (parent, { receiverId }) => {
-      return Receiver.findOne({ _id: receiverId });
+    gifts: async () => {
+      return Gift.find();
+    },
+    gift: async (parent, { recipientId }) => {
+      return Gift.findOne({ _id: recipientId });
+    },
+    recipients: async () => {
+      return Recipient.find();
+    },
+    recipient: async (parent, { recipientId }) => {
+      return Recipient.findOne({ _id: recipientId });
     },
   },
 
   Mutation: {
-    addGift: async (parent, args) => {
-      return Gift.create({ args });
+    addGift: async (parent, { recipientId, gift }) => {
+      return Recipient.findOneAndUpdate(
+        { _id: recipientId },
+        {
+          $addToSet: { gifts: gift },
+        },
+        {
+          new: true,
+          runValidators: true,
+        }
+      );
     },
-    removeGift: async (parent, { giftId }) => {
-      return Gift.findOneAndDelete({ _id: giftId });
+    removeGift: async (parent, { recipientId, gift }) => {
+      return Recipient.findOneAndUpdate(
+        { _id: recipientId },
+        { $pull: { gifts: gift } },
+        { new: true }
+      );
     },
     addMessage: async (parent, { gifterId, messageText }) => {
       return Gifter.findOneAndUpdate(
