@@ -22,8 +22,13 @@ const resolvers = {
     gifter: async (parent, { gifterId }) => {
       return Gift.findOne({ _id: gifterId });
     },
+    messages: async () => {
+      return Message.find();
+    },
+    message: async (parent, { messageId }) => {
+      return Message.findOne({ _id: messageId });
+    },
   },
-
   Mutation: {
     addGift: async (parent, { recipientId, gift }) => {
       return Recipient.findOneAndUpdate(
