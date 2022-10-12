@@ -1,4 +1,4 @@
-const { Schema, model } = require('mongoose');
+const { Schema, model } = require("mongoose");
 
 const giftSchema = new Schema({
   product: {
@@ -24,5 +24,10 @@ const giftSchema = new Schema({
     type: String,
     required: true,
     trim: true,
-  }
+  },
+  imageUrl: {
+    type: String,
+    required: false,
+    trim: true,
+  },
 });
