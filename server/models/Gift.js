@@ -19,5 +19,10 @@ const giftSchema = new Schema({
     type: String,
     required: false,
     trim: true,
+  },
+  url: {
+    type: String,
+    required: true,
+    trim: true,
   }
 });
