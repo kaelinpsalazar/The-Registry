@@ -1,4 +1,4 @@
 const Gifter = require("./Gifter");
-const Receiver = require("./Receiver");
-
-module.exports = { Gifter, Receiver };
+const Recipient = require("./Recipient");
+const Gift = require("./Gift");
+module.exports = { Gifter, Recipient, Gift };

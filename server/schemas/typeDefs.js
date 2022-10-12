@@ -5,6 +5,7 @@ const typeDefs = gql`
     _id: ID
     name: String
     email: String
+    messages: [Message]!
   }
   type Message {
     _id: ID
@@ -17,13 +18,19 @@ const typeDefs = gql`
     name: String
     email: String
     password: String
-  }
+  }ƒ
   type Gift {
     _id: ID
     product: String
     price: Number
     store: String
     description: String
+  }
+  type Registry {
+    _id: ID
+    name: String
+    imageUrl: String
+    gifts: [Gift]!
   }
 
   type Query {
