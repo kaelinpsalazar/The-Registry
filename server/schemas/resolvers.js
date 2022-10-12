@@ -16,6 +16,12 @@ const resolvers = {
     recipient: async (parent, { recipientId }) => {
       return Recipient.findOne({ _id: recipientId });
     },
+    gifters: async () => {
+      return Gifter.find();
+    },
+    gifter: async (parent, { gifterId }) => {
+      return Gift.findOne({ _id: gifterId });
+    },
   },
 
   Mutation: {
