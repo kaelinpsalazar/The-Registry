@@ -1,4 +1,8 @@
 import React from 'react'
+import { useQuery } from '@apollo/client';
+
+import Message from '../components/ThoughtList';
+// import Message from '../components/ThoughtForm';
 
 import "../pages/styles/home.css"
 
@@ -17,7 +21,7 @@ function home() {
           {loading ? (
             <div>Loading...</div>
           ) : (
-            <GifterList
+            <Message
               thoughts={thoughts}
               title="Add Your Information and Credit Card Gift..."
             />
