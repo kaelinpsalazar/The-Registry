@@ -1,10 +1,10 @@
 const db = require("../config/connection");
 
-const { Gifter, Recipient, Gift, Message, Registry } = require("../models");
+const { Gifter, Recipient, Gift } = require("../models");
 
 const gifterSeeds = require("./gifterSeeds.json");
-const recipientSeeds = require("./recipientSeeds");
-const giftSeeds = require("./giftSeeds");
+const recipientSeeds = require("./recipientSeeds.json");
+const giftSeeds = require("./giftSeeds.json");
 
 db.once("open", async () => {
   try {
@@ -13,8 +13,8 @@ db.once("open", async () => {
     await Gift.deleteMany({});
 
     await Gifter.create(gifterSeeds);
-    await Gift.create(giftSeeds);
     await Recipient.create(recipientSeeds);
+    await Gift.create(giftSeeds);
   } catch (err) {
     console.error(err);
     process.exit(1);

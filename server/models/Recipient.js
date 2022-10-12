@@ -17,7 +17,7 @@ const recipientSchema = new Schema({
   password: {
     type: String,
     required: true,
-    minlength: 12,
+    minlength: 8,
   },
 });
 
