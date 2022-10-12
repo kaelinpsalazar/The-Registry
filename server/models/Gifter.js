@@ -15,25 +15,11 @@ const gifterSchema = new Schema({
     match: [/.+@.+\..+/, "Must provide a valid email address!"],
   },
   message: {
-    type: String,
-    minLength: 12,
+    type: Schema.Types.ObjectID,
+    ref: 'Message',
   },
 });
 
-// set up pre-save middleware to create password
-gifterSchema.pre("save", async function (next) {
-  if (this.isNew || this.isModified("password")) {
-    const saltRounds = 10;
-    this.password = await bcrypt.hash(this.password, saltRounds);
-  }
-
-  next();
-});
-
-// compare the incoming password with the hashed password
-gifterSchema.methods.isCorrectPassword = async function (password) {
-  return bcrypt.compare(password, this.password);
-};
 
 const Gifter = model("Gifter", gifterSchema);
 
