@@ -1,0 +1,73 @@
+[
+    {
+        "name" : "John Smith",
+        "email": "john@email.com",
+        "password": "password01"
+    },
+    {
+        "name" : "Jackie Chan",
+        "email": "jackie@email.com",
+        "password": "password02"   
+    },
+    {
+        "name" : "Monkey D Luffy",
+        "email": "meat@email.com",
+        "password": "password03"   
+    },
+    {
+        "name" : "Jimmy Jeff",
+        "email": "jimmy@email.com",
+        "password": "password04"   
+    },
+    {
+        "name" : "Matt Smith",
+        "email": "thedoctor@email.com",
+        "password": "password05"   
+    },
+    {
+        "name" : "Kaelin Salazar",
+        "email": "kaelin@email.com",
+        "password": "password06"   
+    },
+    {
+        "name" : "Arnold Palmer",
+        "email": "arnoldpalmer@email.com",
+        "password": "password07"   
+    },
+    {
+        "name" : "Bill Hader",
+        "email": "bill@email.com",
+        "password": "password08"   
+    },
+    {
+        "name" : "Chris Tucker",
+        "email": "chris@email.com",
+        "password": "password09"   
+    },
+    {
+        "name" : "Frodo Baggins",
+        "email": "thering@email.com",
+        "password": "password10"   
+    },
+    {
+        "name" : "Luke Skywalker",
+        "email": "theforce@email.com",
+        "password": "password11"   
+    },
+    {
+        "name" : "Brandon Sanderson",
+        "email": "brandosando@email.com",
+        "password": "password12"   
+    },
+    {
+        "name" : "Robert Jordan",
+        "email": "thewheelweaves@email.com",
+        "password": "password13"   
+    },
+    {
+        "name" : "Tyrion Lanister",
+        "email": "debts@email.com",
+        "password": "password14"   
+    }
+
+]
