@@ -31,3 +31,7 @@ const giftSchema = new Schema({
     trim: true,
   },
 });
+
+const Gift = model("Gift", giftSchema);
+
+module.exports = Gift;
