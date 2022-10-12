@@ -31,6 +31,10 @@ const typeDefs = gql`
     gifter(name: String!): Gifter
     messages(name: String): [Message]
     message(messageId: ID!): Message
+    recipients: [Recipient]
+    recipient(name: String!): Recipient
+    gifts: (product: String!): Gift
+    gift: (giftId: ID!): Gift
   }
 
   type Mutation {
