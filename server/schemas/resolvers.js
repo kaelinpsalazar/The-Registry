@@ -1,6 +1,6 @@
-const { AuthenticationError } = require("apollo-server-express");
+// const { AuthenticationError } = require("apollo-server-express");
 const { Gifter, Recipient, Gift } = require("../models");
-const { signToken } = require("../utils/auth");
+// const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
@@ -22,8 +22,13 @@ const resolvers = {
     gifter: async (parent, { gifterId }) => {
       return Gift.findOne({ _id: gifterId });
     },
+    messages: async () => {
+      return Message.find();
+    },
+    message: async (parent, { messageId }) => {
+      return Message.findOne({ _id: messageId });
+    },
   },
-
   Mutation: {
     addGift: async (parent, { recipientId, gift }) => {
       return Recipient.findOneAndUpdate(

@@ -5,6 +5,7 @@ const typeDefs = gql`
     _id: ID
     name: String
     email: String
+    messages: [Message]!
   }
   type Message {
     _id: ID
@@ -21,34 +22,40 @@ const typeDefs = gql`
   type Gift {
     _id: ID
     product: String
-    price: Number
+    price: Int
     store: String
     description: String
   }
-
-  type Query {
-    gifters: [Gifter]
-    gifter(name: String!): Gifter
-    messages(name: String): [Message]
-    message(messageId: ID!): Message
-    recipients: [Recipient]
-    recipient(name: String!): Recipient
-    gifts: (product: String!): Gift
-    gift: (giftId: ID!): Gift
+  type Registry {
+    _id: ID
+    name: String
+    imageUrl: String
+    gifts: [Gift]!
   }
 
   type Mutation {
     addGift(
       product: String!
-      price: Number!
+      price: Int!
       store: String!
       description: String!
       url: String!
+      imageUrl: String
     ): Gift
     removeGift(giftId: ID!): Gift
     addMessage(messageText: String!): Message
     removeMessage(messageId: ID!): Message
-    login(email: String!, password: String!): Auth
+  }
+
+  type Query {
+    gifters: [Gifter]!
+    gifter(name: String!): Gifter
+    messages(name: String): [Message]
+    message(messageId: ID!): Message
+    recipients: [Recipient]
+    recipient(name: String!): Recipient
+    gifts(product: String!): Gift
+    gift(giftId: ID!): Gift
   }
 `;
 
