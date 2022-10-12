@@ -7,14 +7,14 @@ const resolvers = {
     gifts: async () => {
       return Gift.find();
     },
-    gift: async (parent, { recipientId }) => {
-      return Gift.findOne({ _id: recipientId });
+    gift: async (parent, { giftId }) => {
+      return Gift.findOne({ _id: giftId });
     },
     recipients: async () => {
-      return Recipient.find();
+      return Recipient.find().populate("gifts");
     },
     recipient: async (parent, { recipientId }) => {
-      return Recipient.findOne({ _id: recipientId });
+      return Recipient.findOne({ _id: recipientId }).populate("gifts");
     },
     gifters: async () => {
       return Gifter.find();
