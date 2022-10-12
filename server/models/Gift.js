@@ -1,33 +1,33 @@
 const { Schema, model } = require("mongoose");
 
 const giftSchema = new Schema({
-  product: {
+product: {
     type: String,
     required: true,
     trim: true,
-  },
-  price: {
+},
+price: {
     type: Integer,
     required: true,
-  },
-  store: {
+},
+store: {
     type: String,
     required: true,
     trim: true,
-  },
-  description: {
+},
+description: {
     type: String,
     required: false,
     trim: true,
-  },
-  url: {
+},
+url: {
     type: String,
     required: true,
     trim: true,
-  },
-  imageUrl: {
+},
+imageUrl: {
     type: String,
     required: false,
     trim: true,
-  },
+},
 });
