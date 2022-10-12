@@ -14,11 +14,6 @@ const gifterSchema = new Schema({
     unique: true,
     match: [/.+@.+\..+/, "Must provide a valid email address!"],
   },
-  password: {
-    type: String,
-    required: true,
-    minlength: 8,
-  },
   message: {
     type: String,
     minLength: 12,
