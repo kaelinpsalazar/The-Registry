@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 
 const recipientSchema = new Schema({
   name: {
-    name: String,
+    type: String,
     required: true,
     unique: false,
     trim: true,
@@ -17,7 +17,7 @@ const recipientSchema = new Schema({
   password: {
     type: String,
     required: true,
-    minlength: 12,
+    minlength: 8,
   },
 });
 
