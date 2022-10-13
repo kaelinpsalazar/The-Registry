@@ -1,6 +1,6 @@
-// const { AuthenticationError } = require("apollo-server-express");
+const { AuthenticationError } = require("apollo-server-express");
 const { Gifter, Recipient, Gift } = require("../models");
-// const { signToken } = require("../utils/auth");
+const { signToken } = require("../utils/auth");
 
 const resolvers = {
   Query: {
@@ -30,17 +30,54 @@ const resolvers = {
     },
   },
   Mutation: {
-    addGift: async (parent, { recipientId, gift }) => {
-      return Recipient.findOneAndUpdate(
-        { _id: recipientId },
-        {
-          $addToSet: { gifts: gift },
-        },
-        {
-          new: true,
-          runValidators: true,
-        }
+    addRecipient: async (parent, { name, email, password }) => {
+      const recipient = await Recipient.create({ name, email, password });
+      const token = signToken(recipient);
+      return { token, recipient };
+    },
+    login: async (parent, { email, password }) => {
+      const recipient = await Recipient.findOne({ email });
+
+      if (!recipient) {
+        throw new AuthenticationError("No user found with this email address");
+      }
+
+      const correctPw = await user.isCorrectPassword(password);
+
+      if (!correctPw) {
+        throw new AuthenticationError("Incorrect credentials");
+      }
+
+      const token = signToken(recipient);
+
+      return { token, recipient };
+    },
+    addGift: async (
+      parent,
+      { product, price, store, description, url, imageUrl, registryId },
+      context
+    ) => {
+      // if (context.user) {
+      console.log("==================");
+      console.log(product);
+      console.log("==================");
+      const gift = await Gift.create({
+        product,
+        price,
+        store,
+        description,
+        url,
+        imageUrl,
+      });
+
+      await Registry.findOneAndUpdate(
+        { _id: registryId },
+        { $addToSet: { gifts: gift._id } }
       );
+
+      return gift;
+      // }
+      // throw new AuthenticationError("You need to be logged in!");
     },
     removeGift: async (parent, { recipientId, gift }) => {
       return Recipient.findOneAndUpdate(
