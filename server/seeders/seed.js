@@ -18,7 +18,7 @@ db.once("open", async () => {
     await Gift.create(giftSeeds);
     for (let i = 0; i < messageSeeds.length; i++) {
       const { _id, messageAuthor } = await Message.create(messageSeeds[i]);
-      const Gifter = await Gifter.findOneAndUpdate(
+      const gifter = await Gifter.findOneAndUpdate(
         { name: messageAuthor },
         {
           $addToSet: {
