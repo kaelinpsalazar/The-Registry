@@ -1,11 +1,19 @@
-import React from 'react'
+import React from 'react';
+import { useQuery } from '@apollo/client';
 
-import "../pages/styles/home.css"
+// import ThoughtList from '../components/ThoughtList';
+// import ThoughtForm from '../components/ThoughtForm';
 
+import { QUERY_THOUGHTS } from '../utils/queries';
 
-function home() {
+import '../pages/styles/home.css';
+
+const Home = () => {
+  const { loading, data } = useQuery(QUERY_THOUGHTS)
+  const thoughts = data?.thoughts || []
+
   return (
-    <div className='home'>
+    <div className="home">
       <div className="flex-row justify-center">
         <div
           className="col-12 col-md-10 mb-3 p-3"
@@ -28,4 +36,4 @@ function home() {
   );
 };
 
-export default home;
+export default Home;
