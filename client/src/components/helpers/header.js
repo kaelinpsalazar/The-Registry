@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-import Auth from '../../utils/auth';
+// import Auth from '../../utils/auth';
 
 
 const Header = () => {
   const logout = (event) => {
     event.preventDefault();
-    Auth.logout();
+    // Auth.logout();
   };
 
   return (
@@ -21,7 +21,7 @@ const Header = () => {
           <p className="m-0">Get into the mind of a programmer.</p>
         </div>
         <div>
-          {Auth.loggedIn() ? (
+          {/* {Auth.loggedIn() ? (
             <>
               <Link className="btn btn-lg btn-info m-2" to="/me">
                 {Auth.getProfile().data.username}'s profile
@@ -39,7 +39,7 @@ const Header = () => {
                 Signup
               </Link>
             </>
-          )}
+          )} */}
         </div>
       </div>
     </header>
