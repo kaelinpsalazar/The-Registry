@@ -1,6 +1,6 @@
 import React from 'react';
 import WishListItems from "../components/helpers/WishListItems";
-import { WishListList } from ''
+import { WishListList } from "../components/helpers/WishListList";
 
 import '../pages/styles/'
 
