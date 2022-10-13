@@ -1,13 +1,12 @@
-import React from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
-
+import React from 'react'
+import { useLocation, useNavigate } from 'react-router-dom'
 
 const Footer = () => {
-  const location = useLocation();
-  const navigate = useNavigate();
+  const location = useLocation()
+  const navigate = useNavigate()
 
   return (
-    <div>
+    <div className="footer stuff">
       <footer className="w-100 mt-auto bg-secondary p-4">
         <div className="container text-center mb-5">
           {location.pathname !== '/' && (
@@ -30,7 +29,7 @@ const Footer = () => {
         </div>
       </footer>
     </div>
-  );
-};
+  )
+}
 
 export default Footer;
