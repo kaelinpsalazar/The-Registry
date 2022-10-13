@@ -32,7 +32,21 @@ const typeDefs = gql`
     imageUrl: String
     gifts: [Gift]!
   }
+  type Auth {
+    token: ID!
+    recipient: Recipient
+  }
 
+  type Query {
+    gifters: [Gifter]!
+    gifter(name: String!): Gifter
+    messages(name: String): [Message]
+    message(messageId: ID!): Message
+    recipients: [Recipient]
+    recipient(name: String!): Recipient
+    gifts(product: String!): Gift
+    gift(giftId: ID!): Gift
+  }
   type Mutation {
     addGift(
       product: String!
@@ -45,17 +59,8 @@ const typeDefs = gql`
     removeGift(giftId: ID!): Gift
     addMessage(messageText: String!): Message
     removeMessage(messageId: ID!): Message
-  }
-
-  type Query {
-    gifters: [Gifter]!
-    gifter(name: String!): Gifter
-    messages(name: String): [Message]
-    message(messageId: ID!): Message
-    recipients: [Recipient]
-    recipient(name: String!): Recipient
-    gifts(product: String!): Gift
-    gift(giftId: ID!): Gift
+    addRecipient(name: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
   }
 `;
 

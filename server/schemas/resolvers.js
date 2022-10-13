@@ -30,6 +30,28 @@ const resolvers = {
     },
   },
   Mutation: {
+    addRecipient: async (parent, { name, email, password }) => {
+      const recipient = await Recipient.create({ name, email, password });
+      const token = signToken(recipient);
+      return { token, recipient };
+    },
+    login: async (parent, { email, password }) => {
+      const recipient = await Recipient.findOne({ email });
+
+      if (!recipient) {
+        throw new AuthenticationError("No user found with this email address");
+      }
+
+      const correctPw = await user.isCorrectPassword(password);
+
+      if (!correctPw) {
+        throw new AuthenticationError("Incorrect credentials");
+      }
+
+      const token = signToken(recipient);
+
+      return { token, recipient };
+    },
     addGift: async (parent, { recipientId, gift }) => {
       return Recipient.findOneAndUpdate(
         { _id: recipientId },
