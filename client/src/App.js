@@ -6,6 +6,7 @@ import Graduation from "./pages/Graduation";
 import Newbaby from "./pages/Newbaby";
 import Header from "./components/helpers/Header";
 import Footer from "./components/helpers/Footer";
+
 // import Receiverlogin from "./components/helpers/Receiverlogin";
 // import Searchregistry from "./components/helpers/Searchregistry";
 // import Retaillinks from "./components/helpers/Retaillinks";
