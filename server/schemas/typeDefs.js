@@ -32,19 +32,9 @@ const typeDefs = gql`
     imageUrl: String
     gifts: [Gift]!
   }
-
-  type Mutation {
-    addGift(
-      product: String!
-      price: Int!
-      store: String!
-      description: String!
-      url: String!
-      imageUrl: String
-    ): Gift
-    removeGift(giftId: ID!): Gift
-    addMessage(messageText: String!): Message
-    removeMessage(messageId: ID!): Message
+  type Auth {
+    token: ID!
+    recipient: Recipient
   }
 
   type Query {
@@ -56,6 +46,22 @@ const typeDefs = gql`
     recipient(name: String!): Recipient
     gifts(product: String!): Gift
     gift(giftId: ID!): Gift
+  }
+  type Mutation {
+    addGift(
+      product: String!
+      price: Int!
+      store: String!
+      description: String!
+      url: String!
+      imageUrl: String!
+      registryId: ID!
+    ): Gift
+    removeGift(giftId: ID!): Gift
+    addMessage(messageText: String!): Message
+    removeMessage(messageId: ID!): Message
+    addRecipient(name: String!, email: String!, password: String!): Auth
+    login(email: String!, password: String!): Auth
   }
 `;
 

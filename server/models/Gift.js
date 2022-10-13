@@ -17,7 +17,7 @@ const giftSchema = new Schema({
   },
   description: {
     type: String,
-    required: false,
+    required: true,
     trim: true,
   },
   url: {
@@ -27,7 +27,7 @@ const giftSchema = new Schema({
   },
   imageUrl: {
     type: String,
-    required: false,
+    required: true,
     trim: true,
   },
 });
