@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { Gifter, Recipient, Gift } = require("../models");
+const { Gifter, Recipient, Gift, Registry } = require("../models");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
@@ -79,12 +79,20 @@ const resolvers = {
       // }
       // throw new AuthenticationError("You need to be logged in!");
     },
-    removeGift: async (parent, { recipientId, gift }) => {
-      return Recipient.findOneAndUpdate(
-        { _id: recipientId },
-        { $pull: { gifts: gift } },
-        { new: true }
+    removeGift: async (parent, { recipienId }, context) => {
+      // if (context.user) {
+      const gift = await Gift.findOneAndDelete({
+        _id: giftId,
+      });
+
+      await Registry.findOneAndUpdate(
+        { _id: context.user._id },
+        { $pull: { gifts: gift._id } }
       );
+
+      return gift;
+      // }
+      // throw new AuthenticationError("You need to be logged in!");
     },
     addMessage: async (parent, { gifterId, messageText }) => {
       return Gifter.findOneAndUpdate(
