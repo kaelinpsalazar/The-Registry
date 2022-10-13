@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // import { useQuery } from '@apollo/client';
 
 // import ThoughtList from '../components/ThoughtList';
@@ -6,7 +6,7 @@ import React from 'react';
 
 // import { QUERY_THOUGHTS } from '../utils/queries';
 
-import './styles/Home.css';
+import "./styles/Home.css";
 
 const Home = () => {
   // const { loading, data } = useQuery(QUERY_THOUGHTS)
@@ -17,7 +17,7 @@ const Home = () => {
       <div className="flex-row justify-center">
         <div
           className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #1a1a1a' }}
+          style={{ border: "1px dotted #1a1a1a" }}
         >
           {/* <GifterForm /> */}
         </div>

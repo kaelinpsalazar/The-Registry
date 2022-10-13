@@ -1,5 +1,11 @@
 const stripe = require("stripe")("sk_test_4eC39HqLyjWDarjtT1zdp7dc");
 
+const paymentIntent = await stripe.paymentIntents.create({
+  amount: 500,
+  currency: "usd",
+  payment_method: "pm_card_visa",
+});
+
 stripe.products
   .create({
     name: "Registry Donation",
