@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Wedding from "./pages/Wedding";
-import Graduation from "./pages/Graduation";
-import Newbaby from "./pages/Newbaby";
-import Header from "./components/helpers/Header";
-import Footer from "./components/helpers/Footer";
+import Home from "./pages/home";
+import Wedding from "./pages/wedding";
+import Graduation from "./pages/graduation";
+import Newbaby from "./pages/newbaby";
+import Header from "./components/helpers/header";
+import Footer from "./components/helpers/footer";
 // import Receiverlogin from "./components/helpers/Receiverlogin";
 // import Searchregistry from "./components/helpers/Searchregistry";
 // import Retaillinks from "./components/helpers/Retaillinks";
