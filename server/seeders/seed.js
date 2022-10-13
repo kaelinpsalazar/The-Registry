@@ -5,6 +5,7 @@ const { Gifter, Recipient, Gift, Message } = require("../models");
 const gifterSeeds = require("./gifterSeeds.json");
 const recipientSeeds = require("./recipientSeeds.json");
 const giftSeeds = require("./giftSeeds.json");
+const messageSeeds = require("./messageSeeds.json");
 
 db.once("open", async () => {
   try {
@@ -22,7 +23,7 @@ db.once("open", async () => {
         { name: messageAuthor },
         {
           $addToSet: {
-            messages: _id,
+            message: _id,
           },
         }
       );
