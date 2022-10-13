@@ -54,7 +54,8 @@ const typeDefs = gql`
       store: String!
       description: String!
       url: String!
-      imageUrl: String
+      imageUrl: String!
+      registryId: ID!
     ): Gift
     removeGift(giftId: ID!): Gift
     addMessage(messageText: String!): Message
