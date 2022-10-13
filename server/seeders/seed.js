@@ -1,6 +1,6 @@
 const db = require("../config/connection");
 
-const { Gifter, Recipient, Gift } = require("../models");
+const { Gifter, Recipient, Gift, Message } = require("../models");
 
 const gifterSeeds = require("./gifterSeeds.json");
 const recipientSeeds = require("./recipientSeeds.json");
@@ -11,10 +11,22 @@ db.once("open", async () => {
     await Gifter.deleteMany({});
     await Recipient.deleteMany({});
     await Gift.deleteMany({});
+    await Message.deleteMany({});
 
     await Gifter.create(gifterSeeds);
     await Recipient.create(recipientSeeds);
     await Gift.create(giftSeeds);
+    for (let i = 0; i < messageSeeds.length; i++) {
+      const { _id, messageAuthor } = await Message.create(messageSeeds[i]);
+      const Gifter = await Gifter.findOneAndUpdate(
+        { name: messageAuthor },
+        {
+          $addToSet: {
+            messages: _id,
+          },
+        }
+      );
+    }
   } catch (err) {
     console.error(err);
     process.exit(1);
