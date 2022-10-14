@@ -1,11 +1,12 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/home";
-import Wedding from "./pages/wedding";
-import Graduation from "./pages/graduation";
-import Newbaby from "./pages/newbaby";
-import Header from "./components/helpers/header";
-import Footer from "./components/helpers/footer";
+import Home from "./pages/Home";
+import Wedding from "./pages/Wedding";
+import Graduation from "./pages/Graduation";
+import Newbaby from "./pages/Newbaby";
+import Header from "./components/helpers/Header";
+import Footer from "./components/helpers/Footer";
+import Navbar from "./components/helpers/Navbar";
 // import Receiverlogin from "./components/helpers/Receiverlogin";
 // import Searchregistry from "./components/helpers/Searchregistry";
 // import Retaillinks from "./components/helpers/Retaillinks";
@@ -16,11 +17,10 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          {/* <Route path="/" element={<Receiverlogin />} />
-          <Route path="/" element={<Searchregistry />} /> */}
           <Route path="/wedding" element={<Wedding />} />
           <Route path="/graduation" element={<Graduation />} />
           <Route path="/newbaby" element={<Newbaby />} />

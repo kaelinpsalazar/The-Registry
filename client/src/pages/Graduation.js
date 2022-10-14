@@ -4,23 +4,23 @@ import { WishListList } from '../components/helpers/WishListList'
 import retaillinks from '../components/helpers/Retaillinks'
 import givemoney from '../components/helpers/Givemoney'
 
-import './styles/wedding.css';
+import './styles/graduation.css'
 
-function Wedding() {
+function Graduation() {
   return (
     <div>
       <div className="retaillinks">
         <h1>the Retail Stores we've Registered at</h1>
       </div>
-      <div className="wedding">
-        <h1>Our Wish List Items</h1>
+      <div className="graduation">
+        <h1>My Wish List Items</h1>
         <div className="wishListList">
-          {WishListList.map((wedding, idx) => {
+          {WishListList.map((graduation, idx) => {
             return (
               <WishListItems
                 id={idx}
-                name={wedding.name}
-                image={wedding.image}
+                name={graduation.name}
+                image={graduation.image}
               />
             )
           })}
@@ -33,4 +33,4 @@ function Wedding() {
   )
 }
 
-export default Wedding
+export default Graduation

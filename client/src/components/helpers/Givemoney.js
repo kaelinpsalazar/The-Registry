@@ -10,7 +10,7 @@ import React from 'react';
 
 // import '../pages/styles/home.css';
 
-const Givemoney = () => {
+const givemoney = () => {
   // const { loading, data } = useQuery(QUERY_THOUGHTS)
   // const thoughts = data?.thoughts || []
 
@@ -38,4 +38,4 @@ const Givemoney = () => {
   );
 };
 
-export default Givemoney;
+export default givemoney;

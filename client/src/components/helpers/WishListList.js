@@ -6,10 +6,10 @@ import GlassPitcher from "../../assets/images/imageE.jpeg";
 import IronPig from "../../assets/images/imageF.jpeg";
 import CookieJar from "../../assets/images/imageG.jpeg";
 import Candles from "../../assets/images/imageH.jpeg";
-import FancyBottle from "../../assets/images/imageI.jpeg";
+import FancyBottle from "../../assets/images/imageJ.jpeg";
 
 
-const IMAGE = [{TyrionLannister}, {Glass}, {Flowers}, {CoffeeMug}, {GlassPitcher}, {IronPig}, {CookieJar}, {Candles}, {FancyBottle}]
+const IMAGE = [{TyrionLannister}, {Glass}, {Flowers}, {CoffeeMug}, {GlassPitcher}, {IronPig}, {CookieJar}, {Candles}, {FancyBottle}];
 
 export const WishListList = [
 	{
