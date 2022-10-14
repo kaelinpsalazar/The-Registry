@@ -19,6 +19,11 @@ export const QUERY_ALLGIFTS = gql`
     gifts {
       _id
       product
+      price
+      store
+      description
+      url
+      imageUrl
     }
   }
 `;

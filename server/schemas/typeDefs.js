@@ -19,11 +19,13 @@ const typeDefs = gql`
     password: String
   }
   type Gift {
-    _id: ID
+    _id: ID!
     product: String
     price: Int
     store: String
     description: String
+    url: String
+    imageUrl: String
   }
   type Registry {
     _id: ID
