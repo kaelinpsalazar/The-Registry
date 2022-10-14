@@ -1,15 +1,15 @@
-import TyrionLannister from "../../assets/images/imageA.jpep";
-import Glass from "../../assets/images/imageB.jpep";
-import Flowers from "../../assets/images/imageC.jpep";
-import imageD from "../../assets/images/imageD.jpep";
-import imageE from "../../assets/images/imageE.jpep";
-import imageF from "../../assets/images/imageF.jpep";
-import imageG from "../../assets/images/imageG.jpep";
-import imageH from "../../assets/images/imageH.jpep";
-import imageI from "../../assets/images/imageI.jpep";
+import TyrionLannister from "../../assets/images/imageA.jpeg";
+import Glass from "../../assets/images/imageB.jpeg";
+import Flowers from "../../assets/images/imageC.jpeg";
+import CoffeeMug from "../../assets/images/imageD.jpeg";
+import GlassPitcher from "../../assets/images/imageE.jpeg";
+import IronPig from "../../assets/images/imageF.jpeg";
+import CookieJar from "../../assets/images/imageG.jpeg";
+import Candles from "../../assets/images/imageH.jpeg";
+import FancyBottle from "../../assets/images/imageI.jpeg";
 
 
-// const IMAGE = [{image name}, {image name}, {image name}]
+const IMAGE = [{TyrionLannister}, {Glass}, {Flowers}, {CoffeeMug}, {GlassPitcher}, {IronPig}, {CookieJar}, {Candles}, {FancyBottle}]
 
 export const WishListList = [
 	{

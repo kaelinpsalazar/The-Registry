@@ -3,7 +3,7 @@ import React from 'react';
 import WishListItems from "../components/helpers/WishListItems";
 import { WishListList } from "../components/helpers/WishListList";
 
-import './styles/Wedding.css';
+import './styles/wedding.css';
 
 function Wedding() {
   return (
