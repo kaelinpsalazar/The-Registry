@@ -1,5 +1,4 @@
 const { gql } = require("apollo-server-express");
-
 const typeDefs = gql`
   type Gifter {
     _id: ID
@@ -36,15 +35,14 @@ const typeDefs = gql`
     token: ID!
     recipient: Recipient
   }
-
   type Query {
     gifters: [Gifter]!
     gifter(name: String!): Gifter
     messages(name: String): [Message]
     message(messageId: ID!): Message
-    recipients: [Recipient]
+    recipients: [Recipient]!
     recipient(name: String!): Recipient
-    gifts(product: String!): Gift
+    gifts: [Gift]!
     gift(giftId: ID!): Gift
   }
   type Mutation {
@@ -64,5 +62,4 @@ const typeDefs = gql`
     login(email: String!, password: String!): Auth
   }
 `;
-
 module.exports = typeDefs;
