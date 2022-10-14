@@ -14,12 +14,13 @@ const gifterSchema = new Schema({
     unique: true,
     match: [/.+@.+\..+/, "Must provide a valid email address!"],
   },
-  message: {
-    type: Schema.Types.ObjectID,
-    ref: 'Message',
-  },
+  message: [
+    {
+      type: Schema.Types.ObjectID,
+      ref: "Message",
+    },
+  ],
 });
-
 
 const Gifter = model("Gifter", gifterSchema);
 
