@@ -1,26 +1,26 @@
 import React from 'react'
 import WishListItems from '../components/helpers/WishListItems'
 import { WishListList } from '../components/helpers/WishListList'
-import retaillinks from '../components/helpers/retaillinks'
-import givemoney from '../components/helpers/givemoney'
+import retaillinks from '../components/helpers/Retaillinks'
+import givemoney from '../components/helpers/Givemoney'
 
-import './styles/wedding.css';
+import './styles/newbaby.css'
 
-function Wedding() {
+function Newbaby() {
   return (
     <div>
       <div className="retaillinks">
         <h1>the Retail Stores we've Registered at</h1>
       </div>
-      <div className="wedding">
+      <div className="newbaby">
         <h1>Our Wish List Items</h1>
         <div className="wishListList">
-          {WishListList.map((wedding, idx) => {
+          {WishListList.map((newbaby, idx) => {
             return (
               <WishListItems
                 id={idx}
-                name={wedding.name}
-                image={wedding.image}
+                name={newbaby.name}
+                image={newbaby.image}
               />
             )
           })}
@@ -33,4 +33,4 @@ function Wedding() {
   )
 }
 
-export default Wedding
+export default Newbaby

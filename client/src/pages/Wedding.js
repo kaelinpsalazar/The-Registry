@@ -1,26 +1,26 @@
 import React from 'react'
 import WishListItems from '../components/helpers/WishListItems'
 import { WishListList } from '../components/helpers/WishListList'
-import retaillinks from '../components/helpers/retaillinks'
-import givemoney from '../components/helpers/givemoney'
+import retaillinks from '../components/helpers/Retaillinks'
+import givemoney from '../components/helpers/Givemoney'
 
-import './styles/Graduation.css'
+import './styles/wedding.css';
 
-function Graduation() {
+function Wedding() {
   return (
     <div>
       <div className="retaillinks">
         <h1>the Retail Stores we've Registered at</h1>
       </div>
-      <div className="graduation">
-        <h1>My Wish List Items</h1>
+      <div className="wedding">
+        <h1>Our Wish List Items</h1>
         <div className="wishListList">
-          {WishListList.map((graduation, idx) => {
+          {WishListList.map((wedding, idx) => {
             return (
               <WishListItems
                 id={idx}
-                name={graduation.name}
-                image={graduation.image}
+                name={wedding.name}
+                image={wedding.image}
               />
             )
           })}
@@ -33,4 +33,4 @@ function Graduation() {
   )
 }
 
-export default Graduation
+export default Wedding
