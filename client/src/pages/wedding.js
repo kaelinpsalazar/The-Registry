@@ -4,7 +4,7 @@ import { WishListList } from '../components/helpers/WishListList'
 import retaillinks from '../components/helpers/retaillinks'
 import givemoney from '../components/helpers/givemoney'
 
-import '../pages/styles/wedding.css';
+import './styles/wedding.css';
 
 function Wedding() {
   return (
