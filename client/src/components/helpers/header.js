@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
 
 // import Auth from '../../utils/auth';
 
@@ -40,11 +42,11 @@ const Header = () => {
               </Link>
             </>
           )} */}
+          </div>
         </div>
-      </div>
-    </header>
+      </header>
     </div>
-  )
+  );
 }
 
 export default Header;
