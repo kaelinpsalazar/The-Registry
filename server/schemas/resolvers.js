@@ -20,7 +20,7 @@ const resolvers = {
       return Gifter.find();
     },
     gifter: async (parent, { gifterId }) => {
-      return Gift.findOne({ _id: gifterId });
+      return Gifter.findOne({ _id: gifterId });
     },
     messages: async () => {
       return Message.find();
