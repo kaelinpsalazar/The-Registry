@@ -1,26 +1,68 @@
-// import image of wishlist item from "../../assets/images/image1.jpep";
-// import image of wishlist item from "../../assets/images/image2.jpep";
-// import image of wishlist item from "../../assets/images/image3.jpep";
+import TyrionLannister from "../../assets/images/imageA.jpeg";
+import Glass from "../../assets/images/imageB.jpeg";
+import Flowers from "../../assets/images/imageC.jpeg";
+import CoffeeMug from "../../assets/images/imageD.jpeg";
+import GlassPitcher from "../../assets/images/imageE.jpeg";
+import IronPig from "../../assets/images/imageF.jpeg";
+import CookieJar from "../../assets/images/imageG.jpeg";
+import Candles from "../../assets/images/imageH.jpeg";
+import FancyBottle from "../../assets/images/imageJ.jpeg";
 
 
-// const IMAGE = [{image name}, {image name}, {image name}]
+const IMAGE = [{TyrionLannister}, {Glass}, {Flowers}, {CoffeeMug}, {GlassPitcher}, {IronPig}, {CookieJar}, {Candles}, {FancyBottle}];
 
 export const WishListList = [
 	{
-		"name": "image name",
-		"image": "https://helpx.adobe.com/content/dam/help/en/premiere-pro/how-to/publish-video-footage-adobe-stock/jcr%3Acontent/main-pars/image/publish-video-footage-adobe-stock_900x506.jpg.img.jpg",
-		"description": "furniture"
+		"name": "Tyrion Lannister",
+		"image": {IMAGE},
+		"description": "funko pop"
 	},
 
 	{
-		"name": "image name",
-		"image": "https://helpx.adobe.com/content/dam/help/en/premiere-pro/how-to/publish-video-footage-adobe-stock/jcr%3Acontent/main-pars/image/publish-video-footage-adobe-stock_900x506.jpg.img.jpg",
+		"name": "Glass",
+		"image": {IMAGE},
 		"description": "kitchenware"
 	},
 
 	{
-		"name": "image name",
-		"image": "https://helpx.adobe.com/content/dam/help/en/premiere-pro/how-to/publish-video-footage-adobe-stock/jcr%3Acontent/main-pars/image/publish-video-footage-adobe-stock_900x506.jpg.img.jpg",
-		"description": "matching snowboards"
+		"name": "Flowers",
+		"image": {IMAGE},
+		"description": "flowers"
+	},
+
+	{
+		"name": "Coffee Mug",
+		"image": {IMAGE},
+		"description": "kitchenware"
+	},
+
+	{
+		"name": "Glass Pitcher",
+		"image": {IMAGE},
+		"description": "kitchenware"
+	},
+
+	{
+		"name": "Iron Pig",
+		"image": {IMAGE},
+		"description": "piggybank"
+	},
+
+	{
+		"name": "Cookie Jar",
+		"image": {IMAGE},
+		"description": "kitchenware"
+	},
+
+	{
+		"name": "Candles",
+		"image": {IMAGE},
+		"description": "kitchenware"
+	},
+
+	{
+		"name": "Fancy Bottle",
+		"image": {IMAGE},
+		"description": "flowers"
 	},
 ];

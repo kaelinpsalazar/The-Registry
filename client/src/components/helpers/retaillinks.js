@@ -3,7 +3,7 @@ import{ Link } from "react-router-dom";
 
 
 
-function Retaillinks() {
+function retaillinks() {
   return (
 
     <div className="retaillinks">
@@ -42,4 +42,4 @@ function Retaillinks() {
   );
 }
 
-export default Retaillinks;
+export default retaillinks;

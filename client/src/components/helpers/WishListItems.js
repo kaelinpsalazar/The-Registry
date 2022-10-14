@@ -8,7 +8,7 @@ function WishListItems({ image, name, id }) {
 	
 	return (
 		<div
-			className="wishListItem"
+			className="wishListItems"
 			onClick={() => {
 				navigate("/wedding/" + id);
 			}}
