@@ -1,0 +1,21 @@
+.main-box {
+  margin: auto;
+  width: 70%;
+  border: 3px solid #8064a2;
+  padding: 10px;
+}
+
+Form {
+  margin: auto;
+  width: 50%;
+  /* border: 3px solid green; */
+  padding: 10px;
+}
+
+.sr {
+  margin: auto;
+  width: 50%;
+  background-color: #8064a2 !important;
+  /* border: 3px solid red; */
+  /* padding: 10px;  */
+}
