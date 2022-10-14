@@ -6,6 +6,7 @@ import Graduation from "./pages/graduation";
 import Newbaby from "./pages/newbaby";
 import Header from "./components/helpers/header";
 import Footer from "./components/helpers/footer";
+import Navbar from "./components/helpers/Navbar";
 // import Receiverlogin from "./components/helpers/Receiverlogin";
 // import Searchregistry from "./components/helpers/Searchregistry";
 // import Retaillinks from "./components/helpers/Retaillinks";
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar />
         <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
