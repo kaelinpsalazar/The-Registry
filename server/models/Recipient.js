@@ -19,6 +19,10 @@ const recipientSchema = new Schema({
     required: true,
     minlength: 8,
   },
+  registry: {
+    type: Schema.Types.ObjectId,
+    ref: "Registry",
+  },
 });
 
 // set up pre-save middleware to create password

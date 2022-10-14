@@ -15,10 +15,12 @@ const registrySchema = new Schema({
     type: String,
     required: false,
   },
-  gifts: {
-    type: Schema.Types.ObjectId,
-    ref: "Gift",
-  },
+  gifts: [
+    {
+      type: Schema.Types.ObjectId,
+      ref: "Gift",
+    },
+  ],
 });
 
 const Registry = model("Registry", registrySchema);

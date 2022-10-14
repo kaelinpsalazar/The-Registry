@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import Wedding from "./pages/wedding";
+import Graduation from "./pages/graduation";
+import Newbaby from "./pages/newbaby";
+import Header from "./components/helpers/header";
+import Footer from "./components/helpers/footer";
+import Navbar from "./components/helpers/Navbar";
+// import Receiverlogin from "./components/helpers/Receiverlogin";
+// import Searchregistry from "./components/helpers/Searchregistry";
+// import Retaillinks from "./components/helpers/Retaillinks";
+// import Givemoney from "./components/helpers/Givemoney";
+// import { Router } from '@material-ui/icons';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar />
+        <Header />
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/wedding" element={<Wedding />} />
+          <Route path="/graduation" element={<Graduation />} />
+          <Route path="/newbaby" element={<Newbaby />} />
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }
