@@ -19,8 +19,6 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" exact element={<Home />} />
-          {/* <Route path="/" element={<Receiverlogin />} />
-          <Route path="/" element={<Searchregistry />} /> */}
           <Route path="/wedding" element={<Wedding />} />
           <Route path="/graduation" element={<Graduation />} />
           <Route path="/newbaby" element={<Newbaby />} />
