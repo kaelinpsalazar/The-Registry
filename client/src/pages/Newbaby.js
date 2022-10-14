@@ -1,10 +1,10 @@
 import React from 'react'
 import WishListItems from '../components/helpers/WishListItems'
 import { WishListList } from '../components/helpers/WishListList'
-import retaillinks from '../components/helpers/retaillinks'
-import givemoney from '../components/helpers/givemoney'
+import retaillinks from '../components/helpers/Retaillinks'
+import givemoney from '../components/helpers/Givemoney'
 
-import './styles/Newbaby.css'
+import './styles/newbaby.css'
 
 function Newbaby() {
   return (
