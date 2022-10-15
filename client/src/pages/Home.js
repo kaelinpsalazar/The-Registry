@@ -8,16 +8,19 @@ import "./styles/home.css"
 function Home() {
   return (
     // <div className="d-flex justify-content-center">
-     
-        <Card className="main-box d-flex justify-content-center">
-          <Form>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="" />
-            </Form.Group>
-          </Form>
-          <Button className="sr" variant="primary">Search Registery</Button>
-        </Card>
-     
+
+    <Card className="main-box d-flex justify-content-center">
+      <Form.Select aria-label="Default select example">
+        <option>Open this select menu</option>
+        <option value="1">Graduation</option>
+        <option value="2">Wedding</option>
+        <option value="3">New Baby</option>
+      </Form.Select>
+      <Button className="sr" variant="primary">
+        Search Registery
+      </Button>
+    </Card>
+
     // </div>
   );
 }
