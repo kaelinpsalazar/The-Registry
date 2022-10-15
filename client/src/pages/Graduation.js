@@ -3,10 +3,14 @@ import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
+import { QUERY_MESSAGES } from "../utils/queries";
 
 import "./styles/graduation.css";
+import { useQuery } from "@apollo/client";
 
 function Graduation() {
+  const { loading, data } = useQuery(QUERY_MESSAGES);
+  const messages = data?.messages || [];
   return (
     <div>
       <div className="retaillinks">
@@ -24,7 +28,7 @@ function Graduation() {
           <GifterInput />
         </div>
         <div className="col-12 col-md-10 mb-3">
-          <MessageList title="Messages for the New Grad" />
+          <MessageList messages={messages} title="Messages for the New Grad" />
         </div>
       </div>
       <div className="givemoney">
