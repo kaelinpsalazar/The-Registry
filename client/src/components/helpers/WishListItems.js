@@ -15,7 +15,7 @@ const WishListItems = () => {
       <Container>
         <Row>
           {gifts &&
-            gifts.map((gift) => (
+            gifts.slice(0, 6).map((gift) => (
               <div
                 className="wishListItems"
                 onClick={() => {
@@ -25,7 +25,7 @@ const WishListItems = () => {
                 <h3>{gift.product}</h3>
                 <h4>Price: ${gift.price}</h4>
                 <h4>Store: {gift.store}</h4>
-                <img src={gift.imageUrl} alt="image of gift" />
+                <img src={gift.imageUrl} alt="image of gift" width="200px" />
                 <p>{gift.description}</p>
                 <button>
                   <a
