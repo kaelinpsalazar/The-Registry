@@ -1,29 +1,55 @@
-// import { gql } from "@apollo/client";
+import { gql } from "@apollo/client";
 
-// export const QUERY_GIFT = gql`
-//   query gift($_id: ID!) {
-//     gift(_id: $_id) {
-//       _id
-//       product
-//       price
-//       store
-//       description
-//       url
-//       imageUrl
-//     }
-//   }
-// `;
+export const QUERY_GIFT = gql`
+  query gift($_id: ID!) {
+    gift(_id: $_id) {
+      _id
+      product
+      price
+      store
+      description
+      url
+      imageUrl
+    }
+  }
+`;
 
-// export const QUERY_ALLGIFTS = gql`
-//   query gifts {
-//     gifts {
-//       _id
-//       product
-//       price
-//       store
-//       description
-//       url
-//       imageUrl
-//     }
-//   }
-// `;
+export const QUERY_GIFTS = gql`
+  query gifts {
+    gifts {
+      _id
+      product
+      price
+      store
+      description
+      url
+      imageUrl
+    }
+  }
+`;
+
+export const QUERY_GIFTER = gql`
+  query gifter($name: String!) {
+    user(name: $name) {
+      _id
+      name
+      email
+      messages {
+        _id
+        messageText
+        createdAt
+      }
+    }
+  }
+`;
+
+export const QUERY_MESSAGES = gql`
+  query getMessages {
+    messages {
+      _id
+      messageText
+      messageAuthor
+      createdAt
+    }
+  }
+`;

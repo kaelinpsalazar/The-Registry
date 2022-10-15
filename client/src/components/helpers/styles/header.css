@@ -1,0 +1,24 @@
+/* .nav {
+ color:#8064a2 !important
+ background-color: #8064a2 !important
+} */
+.text {
+  color: #8064a2 !important;
+}
+
+.container {
+    display: flex;
+}
+
+.buttons {
+  display: flex;
+  align-items: flex-end;
+}
+
+.button-1 {
+  background-color: #8064a2 !important;
+}
+
+.button-2 {
+  background-color: #8064a2 !important;
+}
