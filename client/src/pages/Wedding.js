@@ -4,15 +4,21 @@ import { WishListList } from "../components/helpers/WishListList";
 import retaillinks from "../components/helpers/Retaillinks";
 import givemoney from "../components/helpers/Givemoney";
 import { useQuery } from "@apollo/client";
-import { QUERY_GIFT, QUERY_ALLGIFTS } from "../components/utils/queries";
+import { useParams } from "react-router-dom";
+import { QUERY_GIFT, QUERY_ALLGIFTS } from "../utils/queries";
 
 import "./styles/wedding.css";
 
 function Wedding() {
+  // const { loading, error, data } = useQuery(QUERY_GIFT, {
+  //   variables: { _id: "6349d26b9a0c4fc685a941f4" },
+  // });
+  const { giftId } = useParams();
   const { loading, error, data } = useQuery(QUERY_ALLGIFTS);
   const gifts = data?.gifts || [];
   console.log(gifts);
-  console.log(error);
+  // console.log(error);
+
   return (
     <div>
       <div className="retaillinks">
