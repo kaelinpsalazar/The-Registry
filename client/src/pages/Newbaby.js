@@ -2,7 +2,6 @@ import React from "react";
 import WishListItems from "../components/helpers/WishListItems";
 import { WishListList } from "../components/helpers/WishListList";
 import retaillinks from "../components/helpers/Retaillinks";
-import givemoney from "../components/helpers/Givemoney";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 

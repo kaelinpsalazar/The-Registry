@@ -2,7 +2,6 @@ import React from "react";
 import WishListItems from "../components/helpers/WishListItems";
 import { WishListList } from "../components/helpers/WishListList";
 import retaillinks from "../components/helpers/Retaillinks";
-import givemoney from "../components/helpers/Givemoney";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { QUERY_GIFT, QUERY_GIFTS } from "../utils/queries";
