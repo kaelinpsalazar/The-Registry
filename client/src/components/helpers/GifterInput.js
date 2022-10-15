@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import { useMutation } from "@apollo/client";
 
 import { ADD_MESSAGE } from "../../utils/mutations";
-import { QUERY_THOUGHTS, QUERY_ME } from "../../utils/queries";
+import { QUERY_MESSAGES, QUERY_GIFTER } from "../../utils/queries";
 
 const GifterInput = () => {
   const [messageText, setMessageText] = useState("");
@@ -38,7 +37,7 @@ const GifterInput = () => {
       const { data } = await addMessage({
         variables: {
           messageText,
-          messageAuthor: getProfile().data.name,
+          messageAuthor: data.name,
         },
       });
 

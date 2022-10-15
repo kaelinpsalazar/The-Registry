@@ -1,11 +1,11 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "@apollo/client";
-import { QUERY_GIFT, QUERY_ALLGIFTS } from "../../utils/queries";
+import { QUERY_GIFT, QUERY_GIFTS } from "../../utils/queries";
 
 const WishListItems = ({ gift }) => {
   const navigate = useNavigate();
-  const { loading, data } = useQuery(QUERY_ALLGIFTS);
+  const { loading, data } = useQuery(QUERY_GIFTS);
   const gifts = data?.gifts || [];
   console.log(gifts);
   return (

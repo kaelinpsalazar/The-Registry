@@ -14,7 +14,7 @@ export const QUERY_GIFT = gql`
   }
 `;
 
-export const QUERY_ALLGIFTS = gql`
+export const QUERY_GIFTS = gql`
   query gifts {
     gifts {
       _id
@@ -24,6 +24,32 @@ export const QUERY_ALLGIFTS = gql`
       description
       url
       imageUrl
+    }
+  }
+`;
+
+export const QUERY_GIFTER = gql`
+  query gifter($name: String!) {
+    user(name: $name) {
+      _id
+      name
+      email
+      messages {
+        _id
+        messageText
+        createdAt
+      }
+    }
+  }
+`;
+
+export const QUERY_MESSAGES = gql`
+  query getMessages {
+    messages {
+      _id
+      messageText
+      messageAuthor
+      createdAt
     }
   }
 `;

@@ -7,10 +7,6 @@ const MessageList = ({
   messages,
   showName = true,
 }) => {
-  if (!messages.length) {
-    return <h3>No Messages Yet</h3>;
-  }
-
   return (
     <div>
       {showTitle && <h3>{title}</h3>}

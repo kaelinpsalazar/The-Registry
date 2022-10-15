@@ -5,7 +5,7 @@ import retaillinks from "../components/helpers/Retaillinks";
 import givemoney from "../components/helpers/Givemoney";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
-import { QUERY_GIFT, QUERY_ALLGIFTS } from "../utils/queries";
+import { QUERY_GIFT, QUERY_GIFTS } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 
@@ -16,7 +16,7 @@ function Wedding() {
   //   variables: { _id: "6349d26b9a0c4fc685a941f4" },
   // });
   const { giftId } = useParams();
-  const { loading, error, data } = useQuery(QUERY_ALLGIFTS, {
+  const { loading, error, data } = useQuery(QUERY_GIFTS, {
     variables: { giftId: giftId },
   });
   const gifts = data?.gifts || [];
