@@ -1,10 +1,12 @@
-import React from 'react'
-import WishListItems from '../components/helpers/WishListItems'
-import { WishListList } from '../components/helpers/WishListList'
-import retaillinks from '../components/helpers/Retaillinks'
-import givemoney from '../components/helpers/Givemoney'
+import React from "react";
+import WishListItems from "../components/helpers/WishListItems";
+import { WishListList } from "../components/helpers/WishListList";
+import retaillinks from "../components/helpers/Retaillinks";
+import givemoney from "../components/helpers/Givemoney";
+import GifterInput from "../components/helpers/GifterInput";
+import MessageList from "../components/helpers/MessageList";
 
-import './styles/graduation.css'
+import "./styles/graduation.css";
 
 function Graduation() {
   return (
@@ -22,15 +24,24 @@ function Graduation() {
                 name={graduation.name}
                 image={graduation.image}
               />
-            )
+            );
           })}
+        </div>
+        <div
+          className="col-12 col-md-10 mb-3 p-3"
+          style={{ border: "1px solid #1a1a1a" }}
+        >
+          <GifterInput />
+        </div>
+        <div className="col-12 col-md-10 mb-3">
+          <MessageList title="Messages for the New Grad" />
         </div>
       </div>
       <div className="givemoney">
         <h1>...or you can just give money</h1>
       </div>
     </div>
-  )
+  );
 }
 
-export default Graduation
+export default Graduation;

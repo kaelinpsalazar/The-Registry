@@ -6,6 +6,8 @@ import givemoney from "../components/helpers/Givemoney";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { QUERY_GIFT, QUERY_ALLGIFTS } from "../utils/queries";
+import GifterInput from "../components/helpers/GifterInput";
+import MessageList from "../components/helpers/MessageList";
 
 import "./styles/wedding.css";
 
@@ -14,7 +16,9 @@ function Wedding() {
   //   variables: { _id: "6349d26b9a0c4fc685a941f4" },
   // });
   const { giftId } = useParams();
-  const { loading, error, data } = useQuery(QUERY_ALLGIFTS);
+  const { loading, error, data } = useQuery(QUERY_ALLGIFTS, {
+    variables: { giftId: giftId },
+  });
   const gifts = data?.gifts || [];
   console.log(gifts);
   // console.log(error);
@@ -36,6 +40,15 @@ function Wedding() {
           />
           {/* );
           })} */}
+        </div>
+        <div
+          className="col-12 col-md-10 mb-3 p-3"
+          style={{ border: "1px solid #1a1a1a" }}
+        >
+          <GifterInput />
+        </div>
+        <div className="col-12 col-md-10 mb-3">
+          <MessageList title="Messages for the Newlyweds" />
         </div>
       </div>
       <div className="givemoney">
