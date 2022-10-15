@@ -10,15 +10,15 @@ import MessageList from "../components/helpers/MessageList";
 import "./styles/wedding.css";
 
 function Graduation() {
- 
   const { giftId } = useParams();
   const { loading, error, data } = useQuery(QUERY_GIFTS, {
     variables: { giftId: giftId },
   });
   const gifts = data?.gifts || [];
   console.log(gifts);
+  // const messages = data?.messages || [];
+  // console.log(messages);
   // console.log(error);
-
   return (
     <div>
       <div className="wedding">
@@ -26,6 +26,7 @@ function Graduation() {
         <div className="wishListList">
           <WishListItems />
         </div>
+
         <div className="messageBox">
           <div
             className="messageBox col-12 col-md-10 mb-3 p-3"
