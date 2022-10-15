@@ -3,32 +3,38 @@ import { useNavigate } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import { QUERY_GIFT, QUERY_ALLGIFTS } from "../../utils/queries";
 
-function WishListItems({ product, price, store, description, url, imageUrl }) {
+const WishListItems = ({ gift }) => {
   const navigate = useNavigate();
   const { loading, data } = useQuery(QUERY_ALLGIFTS);
   const gifts = data?.gifts || [];
   console.log(gifts);
-
   return (
-    <div
-      className="wishListItems"
-      onClick={() => {
-        navigate("/wedding/" + gifts._id);
-      }}
-    >
-      {/* <div
-        style={{ backgroundImage: `url(${gifts.imageUrl})` }}
-        className="bgImage"
-      />
-      <h1>{product}</h1>
-      <h4>Price: ${price}</h4>
-      <h4>Store: {store}</h4>
-      <p>{description}</p>
-      <a href={url} class="btn btn primary">
-        Product Link
-      </a> */}
+    <div>
+      {gifts &&
+        gifts.map((gift) => (
+          <div
+            className="wishListItems"
+            onClick={() => {
+              navigate("/wedding/" + gift._id);
+            }}
+          >
+            <h3>{gift.product}</h3>
+            <div
+              style={{ backgroundImage: `url(${gift.imageUrl})` }}
+              className="bgImage"
+            />
+            <h4>Price: ${gift.price}</h4>
+            <h4>Store: {gift.store}</h4>
+            <p>{gift.description}</p>
+            <button>
+              <a href={gift.url} className="btn btn primary">
+                Product Link
+              </a>
+            </button>
+          </div>
+        ))}
     </div>
   );
-}
+};
 
 export default WishListItems;
