@@ -1,10 +1,9 @@
 import React from "react";
 import WishListItems from "../components/helpers/WishListItems";
-import { WishListList } from "../components/helpers/WishListList";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
-import { QUERY_GIFT, QUERY_GIFTS } from "../utils/queries";
+import { QUERY_GIFTS } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 
@@ -30,15 +29,7 @@ function Wedding() {
       <div className="wedding">
         <h1>Our Wish List Items</h1>
         <div className="wishListList">
-          {/* {WishListList.map((wedding, idx) => { */}
-          {/* return ( */}
-          <WishListItems
-          // id={idx}
-          // name={wedding.name}
-          // image={wedding.image}
-          />
-          {/* );
-          })} */}
+          <WishListItems />
         </div>
         <div
           className="col-12 col-md-10 mb-3 p-3"
