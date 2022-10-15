@@ -1,4 +1,3 @@
-// import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "react-bootstrap/Navbar";
 import React, { useState } from "react";
@@ -6,10 +5,8 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import "./styles/header.css";
 import Container from "react-bootstrap/Container";
-
 function BrandExample() {
   const [show, setShow] = useState(false);
-
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
@@ -27,7 +24,6 @@ function BrandExample() {
           </Button>
         </Container>
       </Navbar>
-
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
@@ -45,5 +41,4 @@ function BrandExample() {
     </>
   );
 }
-
 export default BrandExample;
