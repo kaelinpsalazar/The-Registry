@@ -16,7 +16,7 @@ function WishListItems({ product, price, store, description, url, imageUrl }) {
         navigate("/wedding/" + gifts._id);
       }}
     >
-      {/* <div
+      <div
         style={{ backgroundImage: `url(${gifts.imageUrl})` }}
         className="bgImage"
       />
@@ -26,7 +26,7 @@ function WishListItems({ product, price, store, description, url, imageUrl }) {
       <p>{description}</p>
       <a href={url} class="btn btn primary">
         Product Link
-      </a> */}
+      </a>
     </div>
   );
 }

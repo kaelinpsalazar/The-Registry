@@ -1,12 +1,12 @@
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import {
-  ApolloClient,
-  InMemoryCache,
-  ApolloProvider,
-  createHttpLink,
-} from "@apollo/client";
-import { setContext } from "@apollo/client/link/context";
+// import {
+//   ApolloClient,
+//   InMemoryCache,
+//   ApolloProvider,
+//   createHttpLink,
+// } from "@apollo/client";
+// import { setContext } from "@apollo/client/link/context";
 import Home from "./pages/Home";
 import Wedding from "./pages/Wedding";
 import Graduation from "./pages/Graduation";
@@ -20,14 +20,14 @@ import Navbar from "./components/helpers/Navbar";
 // import Givemoney from "./components/helpers/Givemoney";
 // import { Router } from '@material-ui/icons';
 
-const client = new ApolloClient({
-  // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
-  cache: new InMemoryCache(),
-});
+// const client = new ApolloClient({
+//   // Set up our client to execute the `authLink` middleware prior to making the request to our GraphQL API
+//   cache: new InMemoryCache(),
+// });
 
 function App() {
   return (
-    <ApolloProvider client={client}>
+    // <ApolloProvider client={client}>
       <div className="App">
         <Router>
           <Navbar />
@@ -41,7 +41,7 @@ function App() {
           <Footer />
         </Router>
       </div>
-    </ApolloProvider>
+    // </ApolloProvider> 
   );
 }
 
