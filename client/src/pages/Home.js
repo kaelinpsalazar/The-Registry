@@ -29,9 +29,9 @@ function Home() {
             <Nav.Link href="#home"></Nav.Link>
             <Nav.Link href="#link"></Nav.Link>
             <NavDropdown title="push this button 👉" id="basic-nav-dropdown">
-              <NavDropdown.Item href="/Wedding">Wedding</NavDropdown.Item>
-              <NavDropdown.Item href="/Graduatiion">Graduation</NavDropdown.Item>
-              <NavDropdown.Item href="/Newbaby">New Baby</NavDropdown.Item>
+              <NavDropdown.Item href="/wedding">Wedding</NavDropdown.Item>
+              <NavDropdown.Item href="/graduation">Graduation</NavDropdown.Item>
+              <NavDropdown.Item href="/newbaby">New Baby</NavDropdown.Item>
               {/* <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4"></NavDropdown.Item> */}
             </NavDropdown>
