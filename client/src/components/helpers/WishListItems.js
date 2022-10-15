@@ -19,15 +19,16 @@ const WishListItems = ({ gift }) => {
             }}
           >
             <h3>{gift.product}</h3>
-            <div
+            {/* <div
               style={{ backgroundImage: `url(${gift.imageUrl})` }}
               className="bgImage"
-            />
+            /> */}
             <h4>Price: ${gift.price}</h4>
             <h4>Store: {gift.store}</h4>
+            <img src={gift.imageUrl} alt='image of gift' />
             <p>{gift.description}</p>
             <button>
-              <a href={gift.url} className="btn btn primary">
+              <a href={gift.url} className="btn btn primary" target="_blank">
                 Product Link
               </a>
             </button>
