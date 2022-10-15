@@ -7,6 +7,7 @@ import "./styles/home.css"
 
 function Home() {
   return (
+    
     // <div className="d-flex justify-content-center">
      
         <Card className="main-box d-flex justify-content-center">
