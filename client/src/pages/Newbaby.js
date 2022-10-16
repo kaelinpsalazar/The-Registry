@@ -12,6 +12,7 @@ import StripeContainer from "../components/helpers/StripeContainer";
 import { useState } from "react";
 
 import "./styles/newbaby.css";
+import Container from "react-bootstrap/esm/Container";
 
 function Newbaby() {
   const [showItem, setShowItem] = useState(false);
@@ -26,8 +27,9 @@ function Newbaby() {
   return (
     <div>
       <div className="newbabyBg">
-        <h1>The Newborn Registry</h1>
-      <img className ="picture" src={imageM} width = "700" alt="wedding"/>
+      <Container className="imagecontainer" style={{ backgroundImage:`url(${imageM})`}}>
+          <h1 className="pictureTitle">The Newborn Registry</h1>
+        </Container>
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">

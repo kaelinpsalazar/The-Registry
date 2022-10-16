@@ -14,6 +14,7 @@ import MessageList from "../components/helpers/MessageList";
 import StripeContainer from "../components/helpers/StripeContainer";
 
 import "./styles/wedding.css";
+import Container from "react-bootstrap/esm/Container";
 
 const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
 
@@ -30,7 +31,9 @@ function Wedding() {
   return (
     <div>
       <div className="weddingBg">
-        <img src={imageK} width = "700" alt="wedding"/>
+      <Container className="imagecontainer" style={{ backgroundImage:`url(${imageK})`}}>
+          <h1 className ="pictureTitle">The Wedding Registry</h1>
+        </Container>
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">

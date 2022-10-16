@@ -11,6 +11,7 @@ import StripeContainer from "../components/helpers/StripeContainer";
 import { useState } from "react";
 
 import "./styles/graduation.css";
+import Container from "react-bootstrap/esm/Container";
 
 function Graduation() {
   const [showItem, setShowItem] = useState(false);
@@ -22,7 +23,9 @@ function Graduation() {
   return (
     <div>
       <div className="graduationBg">
-      <img src={imageL} height ="400" width = "1000" alt="graduation"/>
+      <Container className="imagecontainer" style={{ backgroundImage:`url(${imageL})`}}>
+          <h1 className="pictureTitle">The Graduation Registry</h1>
+        </Container>
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
