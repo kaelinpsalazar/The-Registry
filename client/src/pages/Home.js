@@ -42,6 +42,27 @@ function Home() {
             </Container>
           </Navbar>
         </Card>
+        <div className="aboutRegistry">
+        <div className="aboutText">
+
+      <p>The Registry is a simple application that allows a couple, or a recent graduate to provide friends and family members access to their gift registry.
+         A traditional gift registry is just a list of gift ideas from specific retail stores.
+         Friends and family members can pick gift items from the list to celebrate the special event.
+         The Registry application includes the gift registry with a link to that retail store. 
+         The applicaion also displays the top three wishlist items, and a feature that allows for dollar amout gifts made with a credit card. 
+         The gift giver can also input their name, email, and a short message for the Recipient.   
+
+
+      </p>
+        </div>
+      </div>
+      <div className="aboutRegistryImages">
+        <div className="aboutRegistryImagesList">
+          <AboutRegistryImagesItem name="the Wedding Registry" image={Image1} />
+          <AboutRegistryImagesItem name="the Graduation Registry" image={Image2} />
+          <AboutRegistryImagesItem name="the New Baby Registry" image={Image3} />
+        </div>
+      </div>
       </div>
     </>
   );
