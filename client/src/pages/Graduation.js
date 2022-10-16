@@ -1,7 +1,5 @@
 import React from "react";
-import imageL from "../assets/images/imageL.jpg"
-
-import WishListItems from "../components/helpers/WishListItems";
+import WishListItemsGrad from "../components/helpers/WishListItemsGrad";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
 import { QUERY_GIFTS, QUERY_MESSAGES } from "../utils/queries";
@@ -23,20 +21,17 @@ function Graduation() {
   return (
     <div>
       <div className="graduationBg">
-      <Container className="imagecontainer" style={{ backgroundImage:`url(${imageL})`}}>
-          <h1 className="pictureTitle">The Graduation Registry</h1>
-        </Container>
-        <div className="wedding">
-          <h1>Our Wish List Items</h1>
-          <div className="wishListList">
-            <WishListItems />
-          </div>
         <div className="retaillinks">
           <h1>Retail Stores We're Registered At:</h1>
           <button className="btn btn-primary"></button>
           <button className="btn btn-primary"></button>
           <button className="btn btn-primary"></button>
         </div>
+        <div className="wedding">
+          <h1>Our Wish List Items</h1>
+          <div className="wishListList">
+            <WishListItemsGrad />
+          </div>
 
           <div className="messageBox">
             <div
@@ -64,6 +59,8 @@ function Graduation() {
               </button>
             </>
           )}
+
+          <h3>...or you can just give money</h3>
         </div>
       </div>
     </div>
