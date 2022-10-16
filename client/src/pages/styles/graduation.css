@@ -9,6 +9,17 @@
   padding-top: 10px;
   margin-top: 0px;
 }
+.imagecontainer{
+  height:500px;
+  width:75%;
+}
+
+.pictureTitle{
+  color:white;
+  margin-bottom: -45%;
+  font-family: cursive;
+}
+
 .wishList {
   width: 100%;
   height: auto;
