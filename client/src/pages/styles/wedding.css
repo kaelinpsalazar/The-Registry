@@ -24,9 +24,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
-  
 }
-
 
 .wishListItems {
   border-radius: 15px;
@@ -38,14 +36,12 @@
   padding: 15px;
 }
 
-.wedding{
-  text-align:center;
+.wedding {
+  text-align: center;
 }
 
-.messageBox{
-  
-  margin-left:80px;
-
+.messageBox {
+  margin-left: 80px;
 }
 
 .wishListItems:hover {

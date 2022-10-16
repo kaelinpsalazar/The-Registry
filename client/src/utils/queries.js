@@ -53,3 +53,16 @@ export const QUERY_MESSAGES = gql`
     }
   }
 `;
+
+export const QUERY_RECIPIENT = gql`
+  query recipient($name: String!) {
+    recipient(name: $name) {
+      _id
+      name
+      email
+      gifts {
+        _id
+      }
+    }
+  }
+`;

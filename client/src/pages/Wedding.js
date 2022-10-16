@@ -12,23 +12,22 @@ import { useState } from "react";
 import "./styles/wedding.css";
 
 function Wedding() {
-  // const { loading, error, data } = useQuery(QUERY_GIFT, {
-  //   variables: { _id: "6349d26b9a0c4fc685a941f4" },
-  // });
   const { giftId } = useParams();
   const { loading, error, data } = useQuery(QUERY_GIFTS, {
     variables: { giftId: giftId },
   });
   const gifts = data?.gifts || [];
   console.log(gifts);
-  // console.log(error);
 
   const [showItem, setShowItem] = useState(false);
 
   return (
     <div>
       <div className="retaillinks">
-        <h1>the Retail Stores we've Registered at</h1>
+        <h1>Retail Stores We're Registered At:</h1>
+        <button className="btn btn-primary"></button>
+        <button className="btn btn-primary"></button>
+        <button className="btn btn-primary"></button>
       </div>
       <div className="wedding">
         <h1>Our Wish List Items</h1>
@@ -36,7 +35,7 @@ function Wedding() {
           <WishListItems />
         </div>
         <div
-          className="col-12 col-md-10 mb-3 p-3"
+          className="col-4 col-md-4 mb-3 p-1"
           style={{ border: "1px solid #1a1a1a" }}
         >
           <GifterInput />
