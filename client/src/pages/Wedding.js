@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import imageK from "../assets/images/imageK.jpg";
-
+import React from "react";
 import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
@@ -11,10 +11,10 @@ import { QUERY_GIFTS } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 import StripeContainer from "../components/helpers/StripeContainer";
+import { useState } from "react";
 
 import "./styles/wedding.css";
-
-const stripePromise = loadStripe("pk_test_TYooMQauvdEDq54NiTphI7jx");
+import Container from "react-bootstrap/esm/Container";
 
 function Wedding() {
   const { giftId } = useParams();
@@ -30,11 +30,26 @@ function Wedding() {
     <div>
       <div className="weddingBg">
         <img src={imageK} width="700" alt="wedding" />
+
+        <div className="retaillinks p-5 justify-content-around d-flex">
+          <h1>Retail Stores We're Registered At:</h1>
+          <a href="https://www.bestbuy.com/" target="_blank">
+            <button className="btn btn-1">Best Buy</button>
+          </a>
+          <a href="https://www.target.com/" target="_blank">
+            <button className="btn btn-1">Target</button>
+          </a>
+          <a href="https://www.bedbathandbeyond.com/" target="_blank">
+            <button className="btn btn-1">Bed Bath & Beyond</button>
+          </a>
+        </div>
+
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
             <WishListItems />
           </div>
+
           <div className="retaillinks p-5 justify-content-around d-flex">
             <h1>Retail Stores We're Registered At:</h1>
             <a href="https://www.crateandbarrel.com/" target="_blank">
@@ -46,6 +61,16 @@ function Wedding() {
             <a href="https://www.bedbathandbeyond.com/" target="_blank">
               <button className="btn btn-1">Bed Bath & Beyond</button>
             </a>
+          </div>
+
+          <div
+            className="col-4 col-md-4 mb-3 p-1"
+            style={{ border: "1px solid #1a1a1a" }}
+          >
+            <GifterInput />
+          </div>
+          <div className="col-12 col-md-10 mb-3">
+            <MessageList title="Messages for the Newlyweds" />
           </div>
 
           <div className="messageBox d-flex">
