@@ -3,6 +3,8 @@ import Navbar from "react-bootstrap/Navbar";
 import React, { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { Link } from "react-router-dom";
+import Nav from "react-bootstrap/Nav";
 import "./styles/header.css";
 import Container from "react-bootstrap/Container";
 function BrandExample() {
@@ -13,7 +15,9 @@ function BrandExample() {
     <>
       <Navbar className="nav" bg="dark" variant="dark">
         <Navbar.Brand className="text" href="#home">
-          The Registry
+          <Nav.Link className="theRegistry" href="/">
+            The Registry
+          </Nav.Link>
         </Navbar.Brand>
         <Container className="buttons">
           <Button className="button-1" variant="primary" onClick={handleShow}>
