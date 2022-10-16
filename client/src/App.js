@@ -14,6 +14,8 @@ import Newbaby from "./pages/Newbaby";
 import Header from "./components/helpers/Header";
 import Footer from "./components/helpers/Footer";
 import Navbar from "./components/helpers/Navbar";
+import StripeContainer from "./components/helpers/StripeContainer";
+import { useState } from "react";
 
 // import Receiverlogin from "./components/helpers/Receiverlogin";
 // import Searchregistry from "./components/helpers/Searchregistry";
@@ -46,9 +48,21 @@ const client = new ApolloClient({
 });
 
 function App() {
+  const [showItem, setShowItem] = useState(false);
   return (
     <ApolloProvider client={client}>
       <div className="App">
+        <h1>The Registry</h1>
+        {showItem ? (
+          <StripeContainer />
+        ) : (
+          <>
+            <h3>$100</h3>
+            <button onClick={() => setShowItem(true)}>
+              Donate to The Registry!
+            </button>
+          </>
+        )}
         <Router>
           <Navbar />
           <Header />
