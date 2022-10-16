@@ -6,6 +6,8 @@ import { useParams } from "react-router-dom";
 import { QUERY_GIFTS } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
+import StripeContainer from "../components/helpers/StripeContainer";
+import { useState } from "react";
 
 import "./styles/wedding.css";
 
@@ -20,6 +22,8 @@ function Wedding() {
   const gifts = data?.gifts || [];
   console.log(gifts);
   // console.log(error);
+
+  const [showItem, setShowItem] = useState(false);
 
   return (
     <div>
@@ -40,9 +44,18 @@ function Wedding() {
         <div className="col-12 col-md-10 mb-3">
           <MessageList title="Messages for the Newlyweds" />
         </div>
-      </div>
-      <div className="givemoney">
-        <h1>...or you can just give money</h1>
+        <div className="givemoney">
+          <h1>...or you can just give us money!</h1>
+          {showItem ? (
+            <StripeContainer />
+          ) : (
+            <>
+              <button onClick={() => setShowItem(true)}>
+                Donate $100 to The Registry!
+              </button>
+            </>
+          )}
+        </div>
       </div>
     </div>
   );

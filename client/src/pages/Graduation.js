@@ -5,14 +5,18 @@ import { useQuery } from "@apollo/client";
 import { QUERY_GIFTS, QUERY_MESSAGES } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
+import StripeContainer from "../components/helpers/StripeContainer";
+import { useState } from "react";
 
 import "./styles/wedding.css";
 
 function Graduation() {
+  const [showItem, setShowItem] = useState(false);
   const { loading, error, data } = useQuery(QUERY_GIFTS, QUERY_MESSAGES);
   const gifts = data?.gifts || [];
   const messages = data?.messages || [];
   console.log(gifts);
+
   return (
     <div>
       <div className="wedding">
@@ -37,10 +41,20 @@ function Graduation() {
         </div>
       </div>
       <div className="givemoney">
+        <h1>...or you can just give us money!</h1>
+        {showItem ? (
+          <StripeContainer />
+        ) : (
+          <>
+            <button onClick={() => setShowItem(true)}>
+              Donate $100 to The Registry!
+            </button>
+          </>
+        )}
+
         <h3>...or you can just give money</h3>
       </div>
     </div>
   );
 }
-
 export default Graduation;
