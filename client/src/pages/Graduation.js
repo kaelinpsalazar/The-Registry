@@ -3,10 +3,13 @@ import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
+import StripeContainer from "../components/helpers/StripeContainer";
+import { useState } from "react";
 
 import "./styles/graduation.css";
 
 function Graduation() {
+  const [showItem, setShowItem] = useState(false);
   return (
     <div>
       <div className="retaillinks">
@@ -28,7 +31,17 @@ function Graduation() {
         </div>
       </div>
       <div className="givemoney">
-        <h1>...or you can just give money</h1>
+        <h1>...or you can just give us money!</h1>
+        {showItem ? (
+          <StripeContainer />
+        ) : (
+          <>
+            <h3>$100</h3>
+            <button onClick={() => setShowItem(true)}>
+              Donate to The Registry!
+            </button>
+          </>
+        )}
       </div>
     </div>
   );
