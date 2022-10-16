@@ -1,11 +1,17 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> c77030ddb99e8930974a3fd5bf62622f134301f8
 import React, { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import imageK from "../assets/images/imageK.jpg";
+<<<<<<< HEAD
 
 
 // import React from "react";
+=======
+>>>>>>> c77030ddb99e8930974a3fd5bf62622f134301f8
 import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
@@ -14,7 +20,10 @@ import { QUERY_GIFTS } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 import StripeContainer from "../components/helpers/StripeContainer";
+<<<<<<< HEAD
 // import { useState } from "react";
+=======
+>>>>>>> c77030ddb99e8930974a3fd5bf62622f134301f8
 
 import "./styles/wedding.css";
 import Container from "react-bootstrap/esm/Container";
@@ -32,6 +41,7 @@ function Wedding() {
   return (
     <div>
       <div className="weddingBg">
+<<<<<<< HEAD
 
         <img src={imageK} width="700" alt="wedding" />
 
@@ -56,13 +66,20 @@ function Wedding() {
           <button className="btn btn-primary"></button>
         </div>
 
+=======
+        <img src={imageK} width="700" alt="wedding" />
+
+>>>>>>> c77030ddb99e8930974a3fd5bf62622f134301f8
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
             <WishListItems />
           </div>
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> c77030ddb99e8930974a3fd5bf62622f134301f8
           <div className="retaillinks p-5 justify-content-around d-flex">
             <h1>Retail Stores We're Registered At:</h1>
             <a href="https://www.crateandbarrel.com/" target="_blank">
@@ -75,6 +92,7 @@ function Wedding() {
               <button className="btn btn-1">Bed Bath & Beyond</button>
             </a>
           </div>
+<<<<<<< HEAD
 
 
 
@@ -88,6 +106,8 @@ function Wedding() {
             <MessageList title="Messages for the Newlyweds" />
           </div>
 
+=======
+>>>>>>> c77030ddb99e8930974a3fd5bf62622f134301f8
           <div className="messageBox d-flex">
             <div
               className="col-6 col-md-6 mb-3 p-1"
