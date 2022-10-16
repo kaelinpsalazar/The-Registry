@@ -1,9 +1,9 @@
 import React from "react";
 import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
+import "./styles/profile.css";
 
 import { QUERY_RECIPIENT } from "../utils/queries";
-
 import Auth from "../utils/auth";
 
 const Profile = () => {

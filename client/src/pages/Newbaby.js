@@ -1,5 +1,7 @@
 import React from "react";
-import WishListItemsBaby from "../components/helpers/WishListItemsBaby";
+import imageM from "../assets/images/imageM.jpg";
+
+import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
@@ -25,16 +27,22 @@ function Newbaby() {
   return (
     <div>
       <div className="newbabyBg">
-        <div className="retaillinks">
-          <h1>Retail Stores We're Registered At:</h1>
-          <button className="btn btn-primary"></button>
-          <button className="btn btn-primary"></button>
-          <button className="btn btn-primary"></button>
-        </div>
+        <Container
+          className="imagecontainer"
+          style={{ backgroundImage: `url(${imageM})` }}
+        >
+          <h1 className="pictureTitle">The Newborn Registry</h1>
+        </Container>
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
-            <WishListItemsBaby />
+            <WishListItems />
+          </div>
+          <div className="retaillinks">
+            <h1>Retail Stores We're Registered At:</h1>
+            <button className="btn btn-primary"></button>
+            <button className="btn btn-primary"></button>
+            <button className="btn btn-primary"></button>
           </div>
           <div className="messageBox">
             <div

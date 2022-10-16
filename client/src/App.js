@@ -11,6 +11,7 @@ import Home from "./pages/Home";
 import Wedding from "./pages/Wedding";
 import Graduation from "./pages/Graduation";
 import Newbaby from "./pages/Newbaby";
+import Profile from "./pages/Profile";
 import Header from "./components/helpers/Header";
 import Footer from "./components/helpers/Footer";
 
@@ -55,6 +56,7 @@ function App() {
             <Route path="/wedding" element={<Wedding />} />
             <Route path="/graduation" element={<Graduation />} />
             <Route path="/newbaby" element={<Newbaby />} />
+            <Route path="/profile" element={<Profile />} />
           </Routes>
           <Footer />
         </Router>
