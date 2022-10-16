@@ -13,8 +13,8 @@ const resolvers = {
     recipients: async () => {
       return Recipient.find().populate("gifts");
     },
-    recipient: async (parent, { recipientId }) => {
-      return Recipient.findOne({ _id: recipientId }).populate("gifts");
+    recipient: async (parent, { name }) => {
+      return Recipient.findOne({ name }).populate("gifts");
     },
     gifters: async () => {
       return Gifter.find();
