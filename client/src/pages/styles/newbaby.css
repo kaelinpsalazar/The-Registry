@@ -55,6 +55,23 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.btn-1,
+.btn-2,
+.btn-3 {
+  color: #8064a2;
+  background-color: white;
+  border: #8064a2 2px solid;
+}
+
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover {
+  color: white;
+  background-color: #8064a2;
+  border: white 2px solid;
+}
+
 .wishListItem h1 {
   font-size: 25px;
 }

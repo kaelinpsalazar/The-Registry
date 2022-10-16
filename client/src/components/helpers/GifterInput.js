@@ -57,43 +57,47 @@ const GifterInput = () => {
 
   return (
     <div>
-      <h2>Leave a message!</h2>
-      <form
-        className="flex-row justify-center justify-space-between-md align-center"
-        onSubmit={handleFormSubmit}
-      >
-        <div className="mb-3">
-          <label for="inputName" className="form-label">
-            Name
-          </label>
-          <input type="name" className="form-control" id="inputName" />
+      <div>
+        <div className="messageBox">
+          <h2>Leave a message!</h2>
+          <form
+            className="justify-center justify-content-center align-center col-12"
+            onSubmit={handleFormSubmit}
+          >
+            <div className="mb-3 col-12">
+              <label for="inputName" className="form-label">
+                Name
+              </label>
+              <input type="name" className="form-control" id="inputName" />
+            </div>
+            <div className="mb-3">
+              <label for="inputEmail" className="form-label">
+                Email address
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                id="inputEmail"
+                aria-describedby="emailHelp"
+              />
+            </div>
+            <div className="mb-3 col-12">
+              <textarea
+                name="messageText"
+                placeholder="Enter a message here."
+                value={messageText}
+                className="form-input w-100"
+                style={{ lineHeight: "1.5", resize: "vertical" }}
+                onChange={handleChange}
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </form>
         </div>
-        <div className="mb-3">
-          <label for="inputEmail" className="form-label">
-            Email address
-          </label>
-          <input
-            type="email"
-            className="form-control"
-            id="inputEmail"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div className="mb-3">
-          <textarea
-            name="messageText"
-            placeholder="Enter a message here."
-            value={messageText}
-            className="form-input w-90"
-            style={{ lineHeight: "1.5", resize: "vertical" }}
-            onChange={handleChange}
-            rows="3"
-          ></textarea>
-        </div>
-        <button type="submit" className="btn btn-primary">
-          Submit
-        </button>
-      </form>
+      </div>
     </div>
   );
 };

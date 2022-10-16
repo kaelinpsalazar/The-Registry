@@ -1,5 +1,5 @@
 import React from "react";
-import imageM from "../assets/images/imageM.jpg"
+import imageM from "../assets/images/imageM.jpg";
 
 import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
@@ -27,21 +27,27 @@ function Newbaby() {
     <div>
       <div className="newbabyBg">
         <h1>The Newborn Registry</h1>
-      <img className ="picture" src={imageM} width = "700" alt="wedding"/>
+        <img className="picture" src={imageM} width="700" alt="wedding" />
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
             <WishListItems />
           </div>
-        <div className="retaillinks">
-          <h1>Retail Stores We're Registered At:</h1>
-          <button className="btn btn-primary"></button>
-          <button className="btn btn-primary"></button>
-          <button className="btn btn-primary"></button>
-        </div>
-          <div className="messageBox">
+          <div className="retaillinks p-5 justify-content-around d-flex">
+            <h1>Retail Stores We're Registered At:</h1>
+            <a href="https://www.potterybarn.com/" target="_blank">
+              <button className="btn btn-1">Pottery Barn</button>
+            </a>
+            <a href="https://www.target.com/" target="_blank">
+              <button className="btn btn-1">Target</button>
+            </a>
+            <a href="https://www.bedbathandbeyond.com/" target="_blank">
+              <button className="btn btn-1">Bed Bath & Beyond</button>
+            </a>
+          </div>
+          <div className="messageBox d-flex">
             <div
-              className="col-4 col-md-4 mb-3 p-1"
+              className="col-6 col-md-6 mb-3 p-1"
               style={{ border: "1px solid #1a1a1a" }}
             >
               <GifterInput />

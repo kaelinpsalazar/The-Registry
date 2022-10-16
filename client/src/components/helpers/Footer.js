@@ -5,9 +5,9 @@ import "./styles/footer.css";
 const Footer = () => {
   return (
     <div>
-      <div className="footer stuff">
-        <footer className="w-100 mt-auto p-4 bg-dark text-light">
-          <div className="container text-center mb-5">
+      <div className="footer">
+        <footer className="w-100 mt-auto p-2 bg-dark text-light">
+          <div className="container text-center mb-1">
             <h4>
               Made with{" "}
               <span

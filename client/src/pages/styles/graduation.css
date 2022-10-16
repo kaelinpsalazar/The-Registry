@@ -9,6 +9,11 @@
   padding-top: 10px;
   margin-top: 0px;
 }
+
+.messageBox {
+  justify-content: center;
+}
+
 .wishList {
   width: 100%;
   height: auto;
