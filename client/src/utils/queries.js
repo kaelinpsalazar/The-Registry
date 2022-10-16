@@ -44,7 +44,7 @@ export const QUERY_GIFTER = gql`
 `;
 
 export const QUERY_MESSAGES = gql`
-  query getMessages {
+  query messages {
     messages {
       _id
       messageText

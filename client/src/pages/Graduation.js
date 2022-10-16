@@ -2,23 +2,17 @@ import React from "react";
 import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
-import { useParams } from "react-router-dom";
-import { QUERY_GIFTS } from "../utils/queries";
+import { QUERY_GIFTS, QUERY_MESSAGES } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 
 import "./styles/wedding.css";
 
 function Graduation() {
-  const { giftId } = useParams();
-  const { loading, error, data } = useQuery(QUERY_GIFTS, {
-    variables: { giftId: giftId },
-  });
+  const { loading, error, data } = useQuery(QUERY_GIFTS, QUERY_MESSAGES);
   const gifts = data?.gifts || [];
+  const messages = data?.messages || [];
   console.log(gifts);
-  // const messages = data?.messages || [];
-  // console.log(messages);
-  // console.log(error);
   return (
     <div>
       <div className="wedding">
@@ -35,12 +29,15 @@ function Graduation() {
             <GifterInput />
           </div>
           <div className="message col-12 col-md-10 mb-3">
-            <MessageList title="Messages for the Graduate" />
+            <MessageList
+              messages={messages}
+              title="Messages for the Graduate"
+            />
           </div>
         </div>
       </div>
       <div className="givemoney">
-        <h1>...or you can just give money</h1>
+        <h3>...or you can just give money</h3>
       </div>
     </div>
   );
