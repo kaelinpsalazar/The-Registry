@@ -10,6 +10,7 @@ const MessageList = ({
   if (!messages) {
     return <h3>No Messages Yet</h3>;
   }
+  console.log(messages);
 
   return (
     <div>
