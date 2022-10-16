@@ -25,7 +25,12 @@ const WishListItems = () => {
                 <h3>{gift.product}</h3>
                 <h4>Price: ${gift.price}</h4>
                 <h4>Store: {gift.store}</h4>
-                <img src={gift.imageUrl} alt="image of gift" width="200px" />
+                <img
+                  src={gift.imageUrl}
+                  alt="image of gift"
+                  width="200px"
+                  border="2px solid black"
+                />
                 <p>{gift.description}</p>
                 <button>
                   <a

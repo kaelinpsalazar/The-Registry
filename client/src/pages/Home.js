@@ -12,32 +12,38 @@ function Home() {
   // const [expandHome, setExpandHome] = useState(false);
   let location = useLocation();
   return (
-    <Card className="main-box d-flex justify-content-center">
-      <Navbar bg="light" expand="lg">
-        <Container>
-          <Navbar.Brand href="#home">Search Registry</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-auto">
-              <Nav.Link href="#home"></Nav.Link>
-              <Nav.Link href="#link"></Nav.Link>
-              <NavDropdown
-                title="push this button :point_right:"
-                id="basic-nav-dropdown"
-              >
-                <NavDropdown.Item href="/wedding">Wedding</NavDropdown.Item>
-                <NavDropdown.Item href="/graduation">
-                  Graduation
-                </NavDropdown.Item>
-                <NavDropdown.Item href="/newbaby">New Baby</NavDropdown.Item>
-                {/* <NavDropdown.Divider />
+    <>
+      <div className="homeBg">
+        <Card className="main-box d-flex justify-content-center">
+          <Navbar bg="light" expand="lg">
+            <Container>
+              <Navbar.Brand href="#home">Search Registry</Navbar.Brand>
+              <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                  <Nav.Link href="#home"></Nav.Link>
+                  <Nav.Link href="#link"></Nav.Link>
+                  <NavDropdown
+                    title="push this button :point_right:"
+                    id="basic-nav-dropdown"
+                  >
+                    <NavDropdown.Item href="/wedding">Wedding</NavDropdown.Item>
+                    <NavDropdown.Item href="/graduation">
+                      Graduation
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/newbaby">
+                      New Baby
+                    </NavDropdown.Item>
+                    {/* <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4"></NavDropdown.Item> */}
-              </NavDropdown>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
-    </Card>
+                  </NavDropdown>
+                </Nav>
+              </Navbar.Collapse>
+            </Container>
+          </Navbar>
+        </Card>
+      </div>
+    </>
   );
 }
 export default Home;

@@ -23,37 +23,39 @@ function Wedding() {
 
   return (
     <div>
-      <div className="retaillinks">
-        <h1>Retail Stores We're Registered At:</h1>
-        <button className="btn btn-primary"></button>
-        <button className="btn btn-primary"></button>
-        <button className="btn btn-primary"></button>
-      </div>
-      <div className="wedding">
-        <h1>Our Wish List Items</h1>
-        <div className="wishListList">
-          <WishListItems />
+      <div className="weddingBg">
+        <div className="retaillinks">
+          <h1>Retail Stores We're Registered At:</h1>
+          <button className="btn btn-primary"></button>
+          <button className="btn btn-primary"></button>
+          <button className="btn btn-primary"></button>
         </div>
-        <div
-          className="col-4 col-md-4 mb-3 p-1"
-          style={{ border: "1px solid #1a1a1a" }}
-        >
-          <GifterInput />
-        </div>
-        <div className="col-12 col-md-10 mb-3">
-          <MessageList title="Messages for the Newlyweds" />
-        </div>
-        <div className="givemoney">
-          <h1>...or you can just give us money!</h1>
-          {showItem ? (
-            <StripeContainer />
-          ) : (
-            <>
-              <button onClick={() => setShowItem(true)}>
-                Donate $100 to The Registry!
-              </button>
-            </>
-          )}
+        <div className="wedding">
+          <h1>Our Wish List Items</h1>
+          <div className="wishListList">
+            <WishListItems />
+          </div>
+          <div
+            className="col-4 col-md-4 mb-3 p-1"
+            style={{ border: "1px solid #1a1a1a" }}
+          >
+            <GifterInput />
+          </div>
+          <div className="col-12 col-md-10 mb-3">
+            <MessageList title="Messages for the Newlyweds" />
+          </div>
+          <div className="givemoney">
+            <h1>...or you can just give us money!</h1>
+            {showItem ? (
+              <StripeContainer />
+            ) : (
+              <>
+                <button onClick={() => setShowItem(true)}>
+                  Donate $100 to The Registry!
+                </button>
+              </>
+            )}
+          </div>
         </div>
       </div>
     </div>
