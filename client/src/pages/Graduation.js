@@ -15,6 +15,12 @@ function Graduation() {
   console.log(gifts);
   return (
     <div>
+      <div className="retaillinks">
+        <h1>Retail Stores We're Registered At:</h1>
+        <button className="btn btn-primary"></button>
+        <button className="btn btn-primary"></button>
+        <button className="btn btn-primary"></button>
+      </div>
       <div className="wedding">
         <h1>Our Wish List Items</h1>
         <div className="wishListList">
@@ -23,7 +29,7 @@ function Graduation() {
 
         <div className="messageBox">
           <div
-            className="messageBox col-12 col-md-10 mb-3 p-3"
+            className="col-4 col-md-4 mb-3 p-1"
             style={{ border: "1px solid #1a1a1a" }}
           >
             <GifterInput />
