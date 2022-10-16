@@ -11,6 +11,7 @@ import StripeContainer from "../components/helpers/StripeContainer";
 import { useState } from "react";
 
 import "./styles/graduation.css";
+import Container from "react-bootstrap/esm/Container";
 
 function Graduation() {
   const [showItem, setShowItem] = useState(false);
@@ -22,28 +23,27 @@ function Graduation() {
   return (
     <div>
       <div className="graduationBg">
-        <img src={imageL} height="400" width="1000" alt="graduation" />
+        <Container
+          className="imagecontainer"
+          style={{ backgroundImage: `url(${imageL})` }}
+        >
+          <h1 className="pictureTitle">The Graduation Registry</h1>
+        </Container>
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
             <WishListItems />
           </div>
-          <div className="retaillinks p-5 justify-content-around d-flex">
+          <div className="retaillinks">
             <h1>Retail Stores We're Registered At:</h1>
-            <a href="https://www.bestbuy.com/" target="_blank">
-              <button className="btn btn-1">Best Buy</button>
-            </a>
-            <a href="https://www.target.com/" target="_blank">
-              <button className="btn btn-1">Target</button>
-            </a>
-            <a href="https://www.bedbathandbeyond.com/" target="_blank">
-              <button className="btn btn-1">Bed Bath & Beyond</button>
-            </a>
+            <button className="btn btn-primary"></button>
+            <button className="btn btn-primary"></button>
+            <button className="btn btn-primary"></button>
           </div>
 
-          <div className="messageBox d-flex">
+          <div className="messageBox">
             <div
-              className="col-6 col-md-6 mb-3 p-1"
+              className="col-4 col-md-4 mb-3 p-1"
               style={{ border: "1px solid #1a1a1a" }}
             >
               <GifterInput />
