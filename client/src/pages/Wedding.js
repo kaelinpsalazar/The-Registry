@@ -1,10 +1,9 @@
-<<<<<<< HEAD
+
 import React, { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import imageK from "../assets/images/imageK.jpg";
-=======
->>>>>>> 3897444dcac951cf62021fc8de40f023ff38bb5d
+
 import React from "react";
 import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
@@ -32,7 +31,7 @@ function Wedding() {
   return (
     <div>
       <div className="weddingBg">
-<<<<<<< HEAD
+
         <img src={imageK} width="700" alt="wedding" />
 
         <div className="retaillinks p-5 justify-content-around d-flex">
@@ -48,20 +47,20 @@ function Wedding() {
           </a>
         </div>
 
-=======
+
         <div className="retaillinks">
           <h1>Retail Stores We're Registered At:</h1>
           <button className="btn btn-primary"></button>
           <button className="btn btn-primary"></button>
           <button className="btn btn-primary"></button>
         </div>
->>>>>>> 3897444dcac951cf62021fc8de40f023ff38bb5d
+
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
             <WishListItems />
           </div>
-<<<<<<< HEAD
+
 
           <div className="retaillinks p-5 justify-content-around d-flex">
             <h1>Retail Stores We're Registered At:</h1>
@@ -76,8 +75,7 @@ function Wedding() {
             </a>
           </div>
 
-=======
->>>>>>> 3897444dcac951cf62021fc8de40f023ff38bb5d
+
           <div
             className="col-4 col-md-4 mb-3 p-1"
             style={{ border: "1px solid #1a1a1a" }}
