@@ -1,37 +1,30 @@
-import React from 'react'
-import { useLocation, useNavigate } from 'react-router-dom'
-
-// import "../pages/styles/footer.css";
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./styles/footer.css";
 
 const Footer = () => {
-  const location = useLocation()
-  const navigate = useNavigate()
-
   return (
-    <div className="footer stuff">
-      <footer className="w-100 mt-auto bg-secondary p-4">
-        <div className="container text-center mb-5">
-          {location.pathname !== '/' && (
-            <button className="btn btn-dark mb-3" onClick={() => navigate(-1)}>
-              &larr; Go Back
-            </button>
-          )}
-          <h4>
-            Made with{' '}
-            <span
-              className="emoji"
-              role="img"
-              aria-label="heart"
-              aria-hidden="false"
-            >
-              ❤️
-            </span>{' '}
-            by the fine folks at soup-du-jour.
-          </h4>
-        </div>
-      </footer>
+    <div>
+      <div className="footer stuff">
+        <footer className="w-100 mt-auto p-4 bg-dark text-light">
+          <div className="container text-center mb-5">
+            <h4>
+              Made with{" "}
+              <span
+                className="emoji"
+                role="img"
+                aria-label="heart"
+                aria-hidden="false"
+              >
+                ❤️
+              </span>{" "}
+              by the fine folks at soup-du-jour.
+            </h4>
+          </div>
+        </footer>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Footer;
