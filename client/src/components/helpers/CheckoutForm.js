@@ -113,7 +113,7 @@ export default function CheckoutForm(props) {
               role="status"
             ></div>
           ) : (
-            `PAY ₹${props.amount}`
+            `PAY $100`
           )}
         </button>
         {errorMsg && <div className="text-danger mt-2">{errorMsg}</div>}
