@@ -10,6 +10,17 @@
   margin-top: 0px;
 }
 
+.imagecontainer{
+  height:300px;
+  width:75%;
+}
+
+.pictureTitle{
+  color:black;
+  margin-bottom: -45%;
+  font-family: cursive;
+}
+
 .wishList {
   width: 100%;
   height: auto;

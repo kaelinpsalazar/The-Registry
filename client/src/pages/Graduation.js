@@ -9,6 +9,7 @@ import StripeContainer from "../components/helpers/StripeContainer";
 import { useState } from "react";
 
 import "./styles/graduation.css";
+import Container from "react-bootstrap/esm/Container";
 
 function Graduation() {
   const [showItem, setShowItem] = useState(false);
