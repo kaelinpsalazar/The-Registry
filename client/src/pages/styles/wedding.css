@@ -7,6 +7,10 @@
   flex-direction: column;
 }
 
+/* .wishListList{
+  align-items: center;
+} */
+
 .wishList .wishListTitle {
   text-align: center;
   color: #09256d;
@@ -20,15 +24,28 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  
 }
+
 
 .wishListItems {
   border-radius: 15px;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: auto;
   margin: 40px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   text-align: center;
+  padding: 15px;
+}
+
+.wedding{
+  text-align:center;
+}
+
+.messageBox{
+  
+  margin-left:80px;
+
 }
 
 .wishListItems:hover {
