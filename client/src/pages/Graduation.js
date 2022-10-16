@@ -61,8 +61,6 @@ function Graduation() {
               </button>
             </>
           )}
-
-          <h3>...or you can just give money</h3>
         </div>
       </div>
     </div>
