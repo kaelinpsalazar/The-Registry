@@ -36,9 +36,8 @@ function Newbaby() {
           <StripeContainer />
         ) : (
           <>
-            <h3>$100</h3>
             <button onClick={() => setShowItem(true)}>
-              Donate to The Registry!
+              Donate $100 to The Registry!
             </button>
           </>
         )}
