@@ -6,10 +6,14 @@ import { useParams } from "react-router-dom";
 import { QUERY_GIFTS } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
+import StripeContainer from "../components/helpers/StripeContainer";
+import { useState } from "react";
 
 import "./styles/wedding.css";
 
 function Newbaby() {
+  const [showItem, setShowItem] = useState(false);
+
   const { giftId } = useParams();
   const { loading, error, data } = useQuery(QUERY_GIFTS, {
     variables: { giftId: giftId },
@@ -43,7 +47,16 @@ function Newbaby() {
         </div>
       </div>
       <div className="givemoney">
-        <h1>...or you can just give money</h1>
+        <h1>...or you can just give us money!</h1>
+        {showItem ? (
+          <StripeContainer />
+        ) : (
+          <>
+            <button onClick={() => setShowItem(true)}>
+              Donate $100 to The Registry!
+            </button>
+          </>
+        )}
       </div>
     </div>
   );
