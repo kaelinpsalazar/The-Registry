@@ -1,9 +1,14 @@
 
+
+
+
 import React, { useState, useEffect } from "react";
 import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
 import imageK from "../assets/images/imageK.jpg";
+
 // import React from "react";
+
 import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
@@ -12,7 +17,10 @@ import { QUERY_GIFTS } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 import StripeContainer from "../components/helpers/StripeContainer";
+
 // import { useState } from "react";
+
+
 
 import "./styles/wedding.css";
 import Container from "react-bootstrap/esm/Container";
@@ -30,6 +38,7 @@ function Wedding() {
   return (
     <div>
       <div className="weddingBg">
+
 
         <Container className="imagecontainerW" style={{ backgroundImage:`url(${imageK})`}}>
             <h1 className ="pictureTitleW">The Wedding Registry</h1>
@@ -56,11 +65,17 @@ function Wedding() {
           <button className="btn btn-primary"></button>
         </div> */}
 
+
+        <img src={imageK} width="700" alt="wedding" />
+
+
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
             <WishListItems />
           </div>
+
+
 
 
           <div className="retaillinks p-5 justify-content-around d-flex">
@@ -76,6 +91,7 @@ function Wedding() {
             </a>
           </div>
 
+
           <div
             className="col-4 col-md-4 mb-3 p-1"
             style={{ border: "1px solid #1a1a1a" }}
@@ -85,6 +101,7 @@ function Wedding() {
           <div className="col-12 col-md-10 mb-3">
             <MessageList title="Messages for the Newlyweds" />
           </div>
+
 
           <div className="messageBox d-flex">
             <div
