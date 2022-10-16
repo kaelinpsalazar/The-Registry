@@ -1,4 +1,6 @@
 import React from "react";
+import imageL from "../assets/images/imageL.jpg"
+
 import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
@@ -20,17 +22,18 @@ function Graduation() {
   return (
     <div>
       <div className="graduationBg">
+      <img src={imageL} height ="400" width = "1000" alt="graduation"/>
+        <div className="wedding">
+          <h1>Our Wish List Items</h1>
+          <div className="wishListList">
+            <WishListItems />
+          </div>
         <div className="retaillinks">
           <h1>Retail Stores We're Registered At:</h1>
           <button className="btn btn-primary"></button>
           <button className="btn btn-primary"></button>
           <button className="btn btn-primary"></button>
         </div>
-        <div className="wedding">
-          <h1>Our Wish List Items</h1>
-          <div className="wishListList">
-            <WishListItems />
-          </div>
 
           <div className="messageBox">
             <div
