@@ -10,3 +10,15 @@ export const ADD_MESSAGE = gql`
     }
   }
 `;
+
+export const LOGIN_RECIPIENT = gql`
+  mutation login($email: String!, $password: String!) {
+    login(email: $email, password: $password) {
+      token
+      recipient {
+        _id
+        name
+      }
+    }
+  }
+`;

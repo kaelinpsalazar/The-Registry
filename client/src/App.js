@@ -13,7 +13,6 @@ import Graduation from "./pages/Graduation";
 import Newbaby from "./pages/Newbaby";
 import Header from "./components/helpers/Header";
 import Footer from "./components/helpers/Footer";
-import Navbar from "./components/helpers/Navbar";
 
 // import Receiverlogin from "./components/helpers/Receiverlogin";
 // import Searchregistry from "./components/helpers/Searchregistry";
@@ -50,7 +49,6 @@ function App() {
     <ApolloProvider client={client}>
       <div className="App">
         <Router>
-          <Navbar />
           <Header />
           <Routes>
             <Route path="/" exact element={<Home />} />
