@@ -1,5 +1,5 @@
 import React from "react";
-import WishListItems from "../components/helpers/WishListItems";
+import WishListItemsBaby from "../components/helpers/WishListItemsBaby";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
@@ -33,7 +33,7 @@ function Newbaby() {
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
-            <WishListItems />
+            <WishListItemsBaby />
           </div>
           <div className="messageBox">
             <div

@@ -48,6 +48,14 @@
     "imageUrl": "https://b3h2.scene7.com/is/image/BedBathandBeyond/444800388447_2?$380$&wid=380&hei=380"
   },
   {
+    "product": "Skye Organic Swaddle Set",
+    "price": 55,
+    "store": "Pottery Barn",
+    "description": "Celestial prints and monochrome hues give this swaddle set its sweetly modern style. Soft, breathable and durable, the organic cotton muslin is gentle on baby’s skin and GOTS Certified for a healthier nursery. Packaged in a box, they're a great option for gifting.",
+    "url": "https://www.potterybarnkids.com/products/organic-skye-swaddle-set-of-3/?pkey=cbedding-baby-swaddles",
+    "imageUrl": "https://assets.pkimgs.com/pkimgs/ab/images/dp/wcm/202235/0029/skye-organic-swaddle-set-xl.jpg"
+  },
+  {
     "product": "Taylor Elephant Musical Crib Mobile",
     "price": 79,
     "store": "Pottery Barn",
@@ -62,14 +70,6 @@
     "description": "Expertly crafted with sustainable pine, our Penny 2-in-1 Convertible Crib adds a classic touch to your child’s room. Resting on turned legs and detailed with scalloped molding, this durable design grows with them over the years, from newborn to toddler. It also reflects a touch of European influence with its elegant, water-based French White finish. Plus, it’s GREENGUARD Gold Certified to promote cleaner indoor air for a healthy home.",
     "url": "https://www.potterybarnkids.com/products/penny-2-in-1-crib/?pkey=ccribs",
     "imageUrl": "https://assets.pkimgs.com/pkimgs/ab/images/dp/wcm/202237/0392/img3xl.jpg"
-  },
-  {
-    "product": "Skye Organic Swaddle Set",
-    "price": 55,
-    "store": "Pottery Barn",
-    "description": "Celestial prints and monochrome hues give this swaddle set its sweetly modern style. Soft, breathable and durable, the organic cotton muslin is gentle on baby’s skin and GOTS Certified for a healthier nursery. Packaged in a box, they're a great option for gifting.",
-    "url": "https://www.potterybarnkids.com/products/organic-skye-swaddle-set-of-3/?pkey=cbedding-baby-swaddles",
-    "imageUrl": "https://assets.pkimgs.com/pkimgs/ab/images/dp/wcm/202235/0029/skye-organic-swaddle-set-xl.jpg"
   },
   {
     "product": "Kendall Extra-Wide Nursery Dresser & Topper Set",
@@ -96,14 +96,6 @@
     "imageUrl": "https://assets.pkimgs.com/pkimgs/ab/images/dp/wcm/202225/0005/elephant-calming-sounds-critter-buddy-xl.jpg"
   },
   {
-    "product": "Keurig K-Mini Single-Serve K-Cup Pod Coffee Maker",
-    "price": 50,
-    "store": "Target",
-    "description": "The Keurig K-Mini single serve coffee maker features a sleek design with matte finish, and at less than 5 inches wide is the perfect size for any space or occasion. The K-Mini brewer is effortlessly simple to use - just add fresh water to the reservoir, pop in your favorite K-Cup pod, press the brew button and enjoy fresh brewed, delicious coffee in minutes.",
-    "url": "https://www.target.com/p/keurig-k-mini-single-serve-k-cup-pod-coffee-maker/-/A-53788870?preselect=53448183#lnk=sametab",
-    "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_e3676b2c-722e-4cb4-8e23-35a9ed07d2a5?wid=800&hei=800&qlt=80&fmt=pjpeg"
-  },
-  {
     "product": "Whirlpool 2.7 cu ft Mini Refrigerator - Stainless Steel - WH27S1E",
     "price": 150,
     "store": "Target",
@@ -120,6 +112,14 @@
     "imageUrl": "https://assets.ptimgs.com/ptimgs/rk/images/dp/wcm/202218/0069/recycled-classic-shower-caddies-xl.jpg"
   },
   {
+    "product": "Cozy Sherpa Bed Blanket",
+    "price": 79,
+    "store": "Pottery Barn",
+    "description": "Stay cozy with a supersoft Recycled Sherpa blanket. Full of texture, warmth and in an array of classic colors, it's the perfect style to layer your sleep space.",
+    "url": "https://www.pbteen.com/products/cozy-recycled-sherpa-bed-blanket/?pkey=cteen-throws-and-blankets",
+    "imageUrl": "https://assets.ptimgs.com/ptimgs/rk/images/dp/wcm/202224/0014/cozy-recycled-sherpa-bed-blanket-xl.jpg"
+  },
+  {
     "product": "Textured Faux-Suede Charcoal Aiden Swivel Desk Chair",
     "price": 199,
     "store": "Pottery Barn",
@@ -128,12 +128,12 @@
     "imageUrl": "https://assets.ptimgs.com/ptimgs/rk/images/dp/wcm/202226/0214/textured-faux-suede-charcoal-aiden-swivel-desk-chair-xl.jpg"
   },
   {
-    "product": "Cozy Sherpa Bed Blanket",
-    "price": 79,
-    "store": "Pottery Barn",
-    "description": "Stay cozy with a supersoft Recycled Sherpa blanket. Full of texture, warmth and in an array of classic colors, it's the perfect style to layer your sleep space.",
-    "url": "https://www.pbteen.com/products/cozy-recycled-sherpa-bed-blanket/?pkey=cteen-throws-and-blankets",
-    "imageUrl": "https://assets.ptimgs.com/ptimgs/rk/images/dp/wcm/202224/0014/cozy-recycled-sherpa-bed-blanket-xl.jpg"
+    "product": "Keurig K-Mini Single-Serve K-Cup Pod Coffee Maker",
+    "price": 50,
+    "store": "Target",
+    "description": "The Keurig K-Mini single serve coffee maker features a sleek design with matte finish, and at less than 5 inches wide is the perfect size for any space or occasion. The K-Mini brewer is effortlessly simple to use - just add fresh water to the reservoir, pop in your favorite K-Cup pod, press the brew button and enjoy fresh brewed, delicious coffee in minutes.",
+    "url": "https://www.target.com/p/keurig-k-mini-single-serve-k-cup-pod-coffee-maker/-/A-53788870?preselect=53448183#lnk=sametab",
+    "imageUrl": "https://target.scene7.com/is/image/Target/GUEST_e3676b2c-722e-4cb4-8e23-35a9ed07d2a5?wid=800&hei=800&qlt=80&fmt=pjpeg"
   },
   {
     "product": "Apple AirPods Pro",

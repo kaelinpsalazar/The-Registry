@@ -1,5 +1,5 @@
 import React from "react";
-import WishListItems from "../components/helpers/WishListItems";
+import WishListItemsGrad from "../components/helpers/WishListItemsGrad";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
 import { QUERY_GIFTS, QUERY_MESSAGES } from "../utils/queries";
@@ -29,7 +29,7 @@ function Graduation() {
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
-            <WishListItems />
+            <WishListItemsGrad />
           </div>
 
           <div className="messageBox">
