@@ -5,7 +5,7 @@ import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
-import { QUERY_GIFTS } from "../utils/queries";
+import { QUERY_GIFTS, QUERY_MESSAGES } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 import StripeContainer from "../components/helpers/StripeContainer";
@@ -15,14 +15,16 @@ import "./styles/newbaby.css";
 import Container from "react-bootstrap/esm/Container";
 
 function Newbaby() {
-  const [showItem, setShowItem] = useState(false);
-
   const { giftId } = useParams();
   const { loading, error, data } = useQuery(QUERY_GIFTS, {
     variables: { giftId: giftId },
   });
   const gifts = data?.gifts || [];
   console.log(gifts);
+  const messageResult = useQuery(QUERY_MESSAGES);
+  const messages = messageResult.data?.messages || [];
+
+  const [showItem, setShowItem] = useState(false);
 
   return (
     <div>
@@ -33,23 +35,33 @@ function Newbaby() {
         >
           <h1 className="pictureTitleB">The Newborn Registry</h1>
         </Container>
+
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
             <WishListItems />
           </div>
-          <div className="retaillinks">
+          <div className="retaillinks p-5 justify-content-around d-flex">
             <h1>Retail Stores We're Registered At:</h1>
-            <button className="btn btn-primary"></button>
-            <button className="btn btn-primary"></button>
-            <button className="btn btn-primary"></button>
+            <a href="https://www.crateandbarrel.com/" target="_blank">
+              <button className="btn btn-1">Crate & Barrel</button>
+            </a>
+            <a href="https://www.target.com/" target="_blank">
+              <button className="btn btn-1">Target</button>
+            </a>
+            <a href="https://www.bedbathandbeyond.com/" target="_blank">
+              <button className="btn btn-1">Bed Bath & Beyond</button>
+            </a>
           </div>
-          <div className="messageBox">
+          <div className="messageBox d-flex">
             <div className="col-6 col-md-6 mb-3">
               <GifterInput />
             </div>
-            <div className="message col-6 col-md-6 mb-3">
-              <MessageList title="Messages for the new parents" />
+            <div className="col-6 col-md-6 mb-3">
+              <MessageList
+                messages={messages}
+                title="Messages for the New Parents"
+              />
             </div>
           </div>
         </div>
