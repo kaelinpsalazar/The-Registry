@@ -1,6 +1,6 @@
 import React from "react";
 // import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
@@ -16,7 +16,7 @@ import "./styles/home.css";
 
 function Home() {
   // const [expandHome, setExpandHome] = useState(false);
-  let location = useLocation();
+  // let location = useLocation();
   return (
     <>
       <div className="homeBg">
@@ -30,12 +30,14 @@ function Home() {
                   <Nav.Link href="#home"></Nav.Link>
                   <Nav.Link href="#link"></Nav.Link>
                   <NavDropdown title="push this button" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="/wedding">Wedding</NavDropdown.Item>
-                    <NavDropdown.Item href="/graduation">
-                      Graduation
+                    <NavDropdown.Item>
+                      <Link to="/wedding">Wedding</Link>
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/newbaby">
-                      New Baby
+                    <NavDropdown.Item>
+                      <Link to="/graduation">Graduation</Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Link to="/newbaby">New Baby</Link>
                     </NavDropdown.Item>
                     {/* <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4"></NavDropdown.Item> */}
@@ -51,13 +53,14 @@ function Home() {
               The Registry is a simple application that allows a couple, or a
               recent graduate to provide friends and family members access to
               their gift registry. A traditional gift registry is just a list of
-              gift ideas from specific retail stores. Friends and family members
-              can pick gift items from the list to celebrate the special event.
-              The Registry application includes the gift registry with a link to
-              that retail store. The applicaion also displays the top three
-              wishlist items, and a feature that allows for dollar amout gifts
-              made with a credit card. The gift giver can also input their name,
-              email, and a short message for the Recipient.
+              gift ideas from specific retail stores. This application provides
+              a genuine connection from the gifter to recipient. Friends and
+              family members can pick gift items from the list to celebrate the
+              special event. The Registry application includes the gift registry
+              with a link to that retail store. The application also displays
+              the top six wishlist items, and a feature that allows for dollar
+              amount gifts made with a credit card. The gift giver can also
+              input their name, email, and a short message for the Recipient.
             </p>
           </div>
         </div>

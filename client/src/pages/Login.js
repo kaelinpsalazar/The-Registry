@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 // import { Navigate, useParams } from "react-router-dom";
-import { useQuery } from "@apollo/client";
+// import { useQuery } from "@apollo/client";
 import "./styles/login.css";
 import { useMutation } from "@apollo/client";
 
-import { QUERY_RECIPIENT } from "../utils/queries";
+// import { QUERY_RECIPIENT } from "../utils/queries";
 import Auth from "../utils/auth";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
