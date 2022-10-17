@@ -40,7 +40,7 @@ const typeDefs = gql`
   type Query {
     gifters: [Gifter]!
     gifter(name: String!): Gifter
-    messages(name: String): [Message]
+    messages: [Message]!
     message(messageId: ID!): Message
     recipients: [Recipient]!
     recipient(name: String!): Recipient
@@ -58,7 +58,7 @@ const typeDefs = gql`
       registryId: ID!
     ): Gift
     removeGift(giftId: ID!): Gift
-    addMessage(messageText: String!): Message
+    addMessage(messageText: String!, messageAuthor: String!): Message
     removeMessage(messageId: ID!): Message
     addRecipient(name: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
