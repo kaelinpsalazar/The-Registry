@@ -67,7 +67,7 @@ function Graduation() {
           ) : (
             <>
               <button
-                className="btn btn-primary justify-content-center m-3"
+                className="moneybtn btn btn-primary justify-content-center m-3"
                 onClick={() => setShowItem(true)}
               >
                 Donate $100 to The Registry!

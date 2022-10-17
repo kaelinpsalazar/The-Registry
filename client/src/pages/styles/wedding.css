@@ -88,14 +88,16 @@
 }
 .btn-1,
 .btn-2,
-.btn-3 {
+.btn-3,
+.moneybtn:hover {
   background-color: white;
   color: purple;
 }
 
 .btn-1:hover,
 .btn-2:hover,
-.btn-3:hover {
+.btn-3:hover,
+.moneybtn:hover {
   background-color: #8064a2;
   color: white;
 }
