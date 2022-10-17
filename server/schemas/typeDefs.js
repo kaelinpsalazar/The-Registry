@@ -63,7 +63,6 @@ const typeDefs = gql`
     addMessage(messageText: String!, messageAuthor: String!): Message
     removeMessage(messageId: ID!): Message
     addRecipient(name: String!, email: String!, password: String!): Auth
-    login(email: String!, password: String!): Auth
   }
 `;
 module.exports = typeDefs;
