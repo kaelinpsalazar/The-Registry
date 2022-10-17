@@ -8,6 +8,12 @@
   font-family: "Berkshire Swash", cursive;
 }
 
+.nav-container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
 .theRegistry:hover {
   color: #8064a2;
 }

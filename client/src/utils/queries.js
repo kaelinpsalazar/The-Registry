@@ -49,7 +49,6 @@ export const QUERY_MESSAGES = gql`
       _id
       messageText
       messageAuthor
-      createdAt
     }
   }
 `;

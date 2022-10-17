@@ -23,11 +23,8 @@ function Graduation() {
   return (
     <div>
       <div className="graduationBg">
-        <Container
-          className="imagecontainer"
-          style={{ backgroundImage: `url(${imageL})` }}
-        >
-          <h1 className="pictureTitle">The Graduation Registry</h1>
+        <Container className="imagecontainerG" style={{ backgroundImage:`url(${imageL})`}}>
+          <h1 className="pictureTitleG">The Graduation Registry</h1>
         </Container>
         <div className="wedding">
           <h1>Our Wish List Items</h1>
@@ -42,13 +39,10 @@ function Graduation() {
           </div>
 
           <div className="messageBox">
-            <div
-              className="col-4 col-md-4 mb-3 p-1"
-              style={{ border: "1px solid #1a1a1a" }}
-            >
+            <div className="col-6 col-md-6 mb-3">
               <GifterInput />
             </div>
-            <div className="message col-12 col-md-10 mb-3">
+            <div className="message col-6 col-md-6 mb-3">
               <MessageList
                 messages={messages}
                 title="Messages for the Graduate"
