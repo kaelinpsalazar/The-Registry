@@ -89,7 +89,7 @@
 .btn-1,
 .btn-2,
 .btn-3,
-.moneybtn:hover {
+.moneybtn {
   background-color: white;
   color: purple;
 }
