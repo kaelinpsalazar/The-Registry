@@ -1,11 +1,11 @@
-
-
-
-
 <h1 align="center">Project 3</h1>
-  
+
+![The Registry](https://user-images.githubusercontent.com/107587452/196089579-04c183a2-0800-41ca-895b-f03dee36b280.jpeg)
+
 ![badge](https://img.shields.io/badge/license-Apache-blue)<br/>
+
 ## Table of Contents
+
 - [Description](#description)
 - [Installation](#installation)
 - [Issues](#issues)
@@ -21,7 +21,7 @@
 
 ## Description
 
-Our task is to create a simple application that allows the Receiver to provide friends and family members with a gift registry that provides the opportunity for the Gifter to give a dollar amount gift with a credit card.  The Gifter gives their gift along with their name, email, and a message for the Receiver.   
+Our task is to create a simple application that allows the Receiver to provide friends and family members with a gift registry that provides the opportunity for the Gifter to give a dollar amount gift with a credit card. The Gifter gives their gift along with their name, email, and a message for the Receiver.
 
 This application will use custom databases to provide updated Gifter data, and a secure credit card processing service.
 
@@ -39,11 +39,11 @@ AS an average Joe with an important upcoming event
 <br/>
 I WANT to share my gift registry with my friends and family members
 <br/>
-SO THAT I can provide a list of gift ideas and links to the retailers 
+SO THAT I can provide a list of gift ideas and links to the retailers
 <br/>
 I WANT to also add the option to just give a dollar amount with a credit card
 <br/>
-SO THAT my friends and family members have both options 
+SO THAT my friends and family members have both options
 
 ## Acceptance Criteria: Recipient
 
@@ -63,7 +63,7 @@ THEN I am logged in and directed back to the Homepage
 <br/>
 WHEN I click on Setup New Registry
 <br/>
-THEN I can choose the type of Registry and make it available to my friends and family members 
+THEN I can choose the type of Registry and make it available to my friends and family members
 <br/>
 
 ## Acceptance Criteria: Gifter
@@ -80,7 +80,7 @@ THEN I am presented with the Registry page
 <br/>
 WHEN I click on the "Give Money" button
 <br/>
-THEN I am presented with the "Give Money" input form 
+THEN I am presented with the "Give Money" input form
 <br/>
 WHEN I enter my name
 <br/>
@@ -100,12 +100,11 @@ Then I can enter a dollar amount to give
 
 ## Usage
 
-The Receviver can login/register on "The Registry" webpage.  During the login/register process, the Receiver will select a Wedding Registry, a Graduation Registry, or a New Baby Registry.  The Receiver can include links to retailers that they have already registered at on the Registry page of their choice.  The Receiver can then include their Registry information in the traditional announcements or invitations. 
+The Receviver can login/register on "The Registry" webpage. During the login/register process, the Receiver will select a Wedding Registry, a Graduation Registry, or a New Baby Registry. The Receiver can include links to retailers that they have already registered at on the Registry page of their choice. The Receiver can then include their Registry information in the traditional announcements or invitations.
 
-The Gifters can search for the Registry on the webpage.  When the Gifters reach the Registry page for their friend or family member, they can click on the links to the retailers and/or they can give a dollar amount gift with a credit card.  If the Gifter chooses to give a dollar amonut gift, they can enter the following information: Name, Email, add a Message, and enter their credit card information via "Stripe".
+The Gifters can search for the Registry on the webpage. When the Gifters reach the Registry page for their friend or family member, they can click on the links to the retailers and/or they can give a dollar amount gift with a credit card. If the Gifter chooses to give a dollar amonut gift, they can enter the following information: Name, Email, add a Message, and enter their credit card information via "Stripe".
 
-The Gifters information is then available to the Receiver.  The Receiver can use this information to help with writting thank you cards.
-
+The Gifters information is then available to the Receiver. The Receiver can use this information to help with writting thank you cards.
 
 ## License
 
@@ -129,8 +128,6 @@ https://github.com/kaelinpsalazar
 
 ## Deployed Links:
 
-
-
 <img src="./public/img/.jpeg" alt="" width="500"/>
 
 ## Credits
@@ -153,4 +150,3 @@ Christopher Boyle&nbsp;&nbsp;&emsp;github.com/timberhead&nbsp;&nbsp;&nbsp;&emsp;
 <br/>
 
 <h3 align="center">This README was generated with ❤️ by fine folks at the-project-3</h3>
-
