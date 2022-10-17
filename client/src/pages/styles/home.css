@@ -35,12 +35,17 @@ Form {
 
 .aboutRegistry {
 display: flex;
-width: 66%;
+width: 70%;
 background-color: white;
+border-style: solid;
 border-color: purple;
-color: blue;
+color: black;
 border-radius: 7px;
-border: 10px;
+border-width: 3px;
+padding-top: 13px;
+padding-bottom: 5px;
+padding-left: 13px;
+padding-right: 13px;
 }
 
 .pictureTitle {
