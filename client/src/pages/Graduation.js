@@ -2,7 +2,6 @@ import React from "react";
 import imageL from "../assets/images/imageL.jpg";
 
 import WishListItems from "../components/helpers/WishListItems";
-import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
 import { QUERY_GIFTS, QUERY_MESSAGES } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
@@ -67,7 +66,10 @@ function Graduation() {
             <StripeContainer />
           ) : (
             <>
-              <button onClick={() => setShowItem(true)}>
+              <button
+                className="moneybtn btn btn-primary justify-content-center m-3"
+                onClick={() => setShowItem(true)}
+              >
                 Donate $100 to The Registry!
               </button>
             </>
