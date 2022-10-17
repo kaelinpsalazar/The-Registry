@@ -32,9 +32,19 @@ const Profile = () => {
 
   return (
     <div>
-      <div className="container flex-row justify-center">
-        <h2 className="col-6 col-md-6 p-3 mb-5">viewing your profile.</h2>
-        <div className="col-6 col-md-6 mb-5">Wishlist:</div>
+      <div class="card text-center">
+        <div class="card-header">Featured</div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text">
+            With supporting text below as a natural lead-in to additional
+            content.
+          </p>
+          <a href="#" class="btn btn-primary">
+            Go somewhere
+          </a>
+        </div>
+        <div class="card-footer text-muted">2 days ago</div>
       </div>
     </div>
   );
