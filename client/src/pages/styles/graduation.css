@@ -9,14 +9,14 @@
   padding-top: 10px;
   margin-top: 0px;
 }
-.imagecontainer {
-  height: 500px;
+.imagecontainerG {
+  height: 380px;
   width: 75%;
 }
 
-.pictureTitle {
-  color: white;
-  margin-bottom: -45%;
+.pictureTitleG {
+  color: rgb(255, 255, 255);
+  margin-bottom: 25%;
   font-family: cursive;
 }
 

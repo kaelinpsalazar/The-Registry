@@ -23,11 +23,8 @@ function Graduation() {
   return (
     <div>
       <div className="graduationBg">
-        <Container
-          className="imagecontainer"
-          style={{ backgroundImage: `url(${imageL})` }}
-        >
-          <h1 className="pictureTitle">The Graduation Registry</h1>
+        <Container className="imagecontainerG" style={{ backgroundImage:`url(${imageL})`}}>
+          <h1 className="pictureTitleG">The Graduation Registry</h1>
         </Container>
         <div className="wedding">
           <h1>Our Wish List Items</h1>
