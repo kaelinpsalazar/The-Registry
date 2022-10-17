@@ -17,38 +17,43 @@ function Graduation() {
   const [showItem, setShowItem] = useState(false);
   const { loading, error, data } = useQuery(QUERY_GIFTS, QUERY_MESSAGES);
   const gifts = data?.gifts || [];
-  const messages = data?.messages || [];
+
+  const messageResult = useQuery(QUERY_MESSAGES);
+  const messages = messageResult.data?.messages || [];
   console.log(gifts);
 
   return (
     <div>
       <div className="graduationBg">
         <Container
-          className="imagecontainer"
+          className="imagecontainerG"
           style={{ backgroundImage: `url(${imageL})` }}
         >
-          <h1 className="pictureTitle">The Graduation Registry</h1>
+          <h1 className="pictureTitleG">The Graduation Registry</h1>
         </Container>
+
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
             <WishListItems />
           </div>
-          <div className="retaillinks">
+          <div className="retaillinks p-5 justify-content-around d-flex">
             <h1>Retail Stores We're Registered At:</h1>
-            <button className="btn btn-primary"></button>
-            <button className="btn btn-primary"></button>
-            <button className="btn btn-primary"></button>
+            <a href="https://www.crateandbarrel.com/" target="_blank">
+              <button className="btn btn-1">Crate & Barrel</button>
+            </a>
+            <a href="https://www.target.com/" target="_blank">
+              <button className="btn btn-1">Target</button>
+            </a>
+            <a href="https://www.bedbathandbeyond.com/" target="_blank">
+              <button className="btn btn-1">Bed Bath & Beyond</button>
+            </a>
           </div>
-
-          <div className="messageBox">
-            <div
-              className="col-4 col-md-4 mb-3 p-1"
-              style={{ border: "1px solid #1a1a1a" }}
-            >
+          <div className="messageBox d-flex">
+            <div className="col-6 col-md-6 mb-3">
               <GifterInput />
             </div>
-            <div className="message col-12 col-md-10 mb-3">
+            <div className="message col-6 col-md-6 mb-3">
               <MessageList
                 messages={messages}
                 title="Messages for the Graduate"

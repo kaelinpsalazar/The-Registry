@@ -14,6 +14,8 @@ import Newbaby from "./pages/Newbaby";
 import Profile from "./pages/Profile";
 import Header from "./components/helpers/Header";
 import Footer from "./components/helpers/Footer";
+import Signup from "./pages/Signup";
+import Login from "./pages/Login";
 
 // import Receiverlogin from "./components/helpers/Receiverlogin";
 // import Searchregistry from "./components/helpers/Searchregistry";
@@ -57,6 +59,8 @@ function App() {
             <Route path="/graduation" element={<Graduation />} />
             <Route path="/newbaby" element={<Newbaby />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
           </Routes>
           <Footer />
         </Router>
