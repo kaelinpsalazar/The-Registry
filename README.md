@@ -1,7 +1,3 @@
-
-
-
-
 <h1 align="center">The Registry</h1>
   
 ![badge](https://img.shields.io/badge/license-Apache-blue)<br/>
@@ -24,8 +20,6 @@
 Our task is to create a simple application that allows the Recipient to provide friends and family members with a gift registry that provides the opportunity for the Gifter to give a dollar amount gift with a credit card.  The Gifter gives their gift along with their name, email, and a message for the Receiver.   
 
 This application will use custom databases to provide updated Gifter data, and a secure credit card processing service.
-
-![alt text](/Users/alwong./Desktop/Project-three/Project-3/client/src/assets/images/the-registry.jpeg)
 
 ## Installation
 
