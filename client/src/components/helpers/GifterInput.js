@@ -98,7 +98,11 @@ const GifterInput = () => {
                 rows="3"
               ></textarea>
             </div>
-            <button type="submit" className="btn btn-primary">
+            <button
+              type="submit"
+              className="btn btn-primary"
+              style={{ backgroundColor: "#8064a2" }}
+            >
               Submit
             </button>
           </form>
