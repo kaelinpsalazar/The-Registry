@@ -101,7 +101,7 @@ const GifterInput = () => {
             <button
               type="submit"
               className="btn btn-primary"
-              style={{ backgroundColor: "#8064a2" }}
+              style={{ backgroundColor: "#8064a2", border: "white" }}
             >
               Submit
             </button>
