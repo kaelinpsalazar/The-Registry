@@ -14,7 +14,7 @@ function BrandExample() {
           <div>
             <Navbar.Brand className="text" href="#home">
               <Link to="/">
-                <Button className="theRegistry">The Registry</Button>
+                <h1 className="theRegistry">The Registry</h1>
               </Link>
             </Navbar.Brand>
           </div>
