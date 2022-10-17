@@ -2,7 +2,7 @@
 
 
 
-<h1 align="center">Project 3</h1>
+<h1 align="center">The Registry</h1>
   
 ![badge](https://img.shields.io/badge/license-Apache-blue)<br/>
 ## Table of Contents
@@ -21,9 +21,11 @@
 
 ## Description
 
-Our task is to create a simple application that allows the Receiver to provide friends and family members with a gift registry that provides the opportunity for the Gifter to give a dollar amount gift with a credit card.  The Gifter gives their gift along with their name, email, and a message for the Receiver.   
+Our task is to create a simple application that allows the Recipient to provide friends and family members with a gift registry that provides the opportunity for the Gifter to give a dollar amount gift with a credit card.  The Gifter gives their gift along with their name, email, and a message for the Receiver.   
 
 This application will use custom databases to provide updated Gifter data, and a secure credit card processing service.
+
+![alt text](/Users/alwong./Desktop/Project-three/Project-3/client/src/assets/images/the-registry.jpeg)
 
 ## Installation
 
@@ -100,11 +102,11 @@ Then I can enter a dollar amount to give
 
 ## Usage
 
-The Receviver can login/register on "The Registry" webpage.  During the login/register process, the Receiver will select a Wedding Registry, a Graduation Registry, or a New Baby Registry.  The Receiver can include links to retailers that they have already registered at on the Registry page of their choice.  The Receiver can then include their Registry information in the traditional announcements or invitations. 
+The Recipient can login/register on "The Registry" webpage.  During the login/register process, the Recipient will select a Wedding Registry, a Graduation Registry, or a New Baby Registry.  The Recipient can include links to retailers that they have already registered at on the Registry page of their choice.  The Recipient can then include their Registry information in the traditional announcements or invitations. 
 
 The Gifters can search for the Registry on the webpage.  When the Gifters reach the Registry page for their friend or family member, they can click on the links to the retailers and/or they can give a dollar amount gift with a credit card.  If the Gifter chooses to give a dollar amonut gift, they can enter the following information: Name, Email, add a Message, and enter their credit card information via "Stripe".
 
-The Gifters information is then available to the Receiver.  The Receiver can use this information to help with writting thank you cards.
+The Gifters information is then available to the Recipient.  The Recipient can use this information to help with writting thank you cards.
 
 
 ## License
@@ -129,9 +131,8 @@ https://github.com/kaelinpsalazar
 
 ## Deployed Links:
 
+Heroku
 
-
-<img src="./public/img/.jpeg" alt="" width="500"/>
 
 ## Credits
 
@@ -152,5 +153,5 @@ Christopher Boyle&nbsp;&nbsp;&emsp;github.com/timberhead&nbsp;&nbsp;&nbsp;&emsp;
 <br/>
 <br/>
 
-<h3 align="center">This README was generated with ❤️ by fine folks at the-project-3</h3>
+<h3 align="center">This README was generated with ❤️ by fine folks at the-registry</h3>
 

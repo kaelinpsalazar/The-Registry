@@ -11,15 +11,11 @@ import { QUERY_GIFTS, QUERY_MESSAGES } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 import StripeContainer from "../components/helpers/StripeContainer";
-<<<<<<< HEAD
+
 // import { useState } from "react";
-<<<<<<< HEAD
-=======
 
->>>>>>> 8a87216c28b12baa9b9089a17fe2c712f2a51a2f
-=======
 
->>>>>>> 811cb0365c8d940c25877c8f327a92740bf8a56d
+
 import "./styles/wedding.css";
 import Container from "react-bootstrap/esm/Container";
 
@@ -39,8 +35,7 @@ function Wedding() {
   return (
     <div>
       <div className="weddingBg">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
         <Container className="imagecontainerW" style={{ backgroundImage:`url(${imageK})`}}>
             <h1 className ="pictureTitleW">The Wedding Registry</h1>
         </Container>
@@ -64,9 +59,7 @@ function Wedding() {
           <button className="btn btn-primary"></button>
         </div> */}
         <img src={imageK} width="700" alt="wedding" />
-=======
-=======
->>>>>>> 811cb0365c8d940c25877c8f327a92740bf8a56d
+
         <Container
           className="imagecontainerW"
           style={{ backgroundImage: `url(${imageK})` }}
@@ -74,23 +67,12 @@ function Wedding() {
           <h1 className="pictureTitleW">The Wedding Registry</h1>
         </Container>
 
-<<<<<<< HEAD
->>>>>>> 8a87216c28b12baa9b9089a17fe2c712f2a51a2f
-=======
->>>>>>> 811cb0365c8d940c25877c8f327a92740bf8a56d
+
         <div className="wedding">
           <h1>Our Wish List Items</h1>
           <div className="wishListList">
             <WishListItems />
           </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> 8a87216c28b12baa9b9089a17fe2c712f2a51a2f
-=======
-
->>>>>>> 811cb0365c8d940c25877c8f327a92740bf8a56d
           <div className="retaillinks p-5 justify-content-around d-flex">
             <h1>Retail Stores We're Registered At:</h1>
             <a href="https://www.crateandbarrel.com/" target="_blank">
@@ -103,8 +85,7 @@ function Wedding() {
               <button className="btn btn-1">Bed Bath & Beyond</button>
             </a>
           </div>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
           <div
             className="col-4 col-md-4 mb-3 p-1"
             style={{ border: "1px solid #1A1A1A" }}
@@ -114,12 +95,12 @@ function Wedding() {
           <div className="col-12 col-md-10 mb-3">
             <MessageList title="Messages for the Newlyweds" />
           </div>
-=======
 
->>>>>>> 8a87216c28b12baa9b9089a17fe2c712f2a51a2f
-=======
 
->>>>>>> 811cb0365c8d940c25877c8f327a92740bf8a56d
+
+
+
+
           <div className="messageBox d-flex">
             <div className="col-6 col-md-6 mb-3">
               <GifterInput />
