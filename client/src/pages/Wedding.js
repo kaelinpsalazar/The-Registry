@@ -6,7 +6,7 @@ import WishListItems from "../components/helpers/WishListItems";
 import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
-import { QUERY_GIFTS } from "../utils/queries";
+import { QUERY_GIFTS, QUERY_MESSAGES } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 import StripeContainer from "../components/helpers/StripeContainer";
@@ -21,6 +21,9 @@ function Wedding() {
   });
   const gifts = data?.gifts || [];
   console.log(gifts);
+
+  const messageResult = useQuery(QUERY_MESSAGES);
+  const messages = messageResult.data?.messages || [];
 
   const [showItem, setShowItem] = useState(false);
 
@@ -47,14 +50,14 @@ function Wedding() {
             </a>
           </div>
           <div className="messageBox d-flex">
-            <div
-              className="col-6 col-md-6 mb-3 p-1"
-              style={{ border: "1px solid #1a1a1a" }}
-            >
+            <div className="col-6 col-md-6 mb-3">
               <GifterInput />
             </div>
-            <div className="col-12 col-md-10 mb-3">
-              <MessageList title="Messages for the Newlyweds" />
+            <div className="col-6 col-md-6 mb-3">
+              <MessageList
+                messages={messages}
+                title="Messages for the Newlyweds"
+              />
             </div>
           </div>
         </div>

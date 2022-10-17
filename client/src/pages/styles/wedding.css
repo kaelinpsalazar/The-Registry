@@ -10,13 +10,13 @@
   margin-top: 0px;
 }
 
-.imagecontainer{
-  height:300px;
-  width:75%;
+.imagecontainer {
+  height: 300px;
+  width: 75%;
 }
 
-.pictureTitle{
-  color:black;
+.pictureTitle {
+  color: black;
   margin-bottom: -45%;
   font-family: cursive;
 }
@@ -64,7 +64,7 @@
 }
 
 .messageBox {
-  margin-left: 80px;
+  padding: 0px 40px;
 }
 
 .wishListItems:hover {

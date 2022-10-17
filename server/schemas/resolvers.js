@@ -1,5 +1,5 @@
 const { AuthenticationError } = require("apollo-server-express");
-const { Gifter, Recipient, Gift, Registry } = require("../models");
+const { Gifter, Recipient, Gift, Registry, Message } = require("../models");
 const { signToken } = require("../utils/auth");
 
 const resolvers = {
@@ -94,11 +94,15 @@ const resolvers = {
       // }
       // throw new AuthenticationError("You need to be logged in!");
     },
-    addMessage: async (parent, { gifterId, messageText }) => {
-      return Gifter.findOneAndUpdate(
-        { _id: gifterId },
+    addMessage: async (parent, { messageAuthor, messageText }) => {
+      console.log(messageAuthor, messageText);
+
+      // add this message to the list of messages
+
+      return Message.create(
+        { messageAuthor: messageAuthor },
         {
-          $addToSet: { messages: { messageText } },
+          $addToSet: { messages: { messageText, messageAuthor } },
         },
         {
           new: true,
