@@ -1,15 +1,29 @@
-import React from "react";
-import { Navigate, useParams } from "react-router-dom";
+import React, { useState } from "react";
+// import { Navigate, useParams } from "react-router-dom";
 import { useQuery } from "@apollo/client";
 import "./styles/login.css";
+import { useMutation } from "@apollo/client";
 
 import { QUERY_RECIPIENT } from "../utils/queries";
 import Auth from "../utils/auth";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import { LOGIN_RECIPIENT } from "../utils/mutations";
 
-const Login = () => {
-  const { name: userParam } = useParams();
+const Login = (props) => {
+  //   const { name: userParam } = useParams();
+  const [formState, setFormState] = useState({ email: "", password: "" });
+  const [login, { error, data }] = useMutation(LOGIN_RECIPIENT);
+
+  // update state based on form input changes
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+
+    setFormState({
+      ...formState,
+      [name]: value,
+    });
+  };
 
   return (
     <div>
