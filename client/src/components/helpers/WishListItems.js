@@ -4,6 +4,7 @@ import { useQuery } from "@apollo/client";
 import { QUERY_GIFTS } from "../../utils/queries";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import "./styles/backgroundColor.css";
 
 const WishListItems = () => {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ const WishListItems = () => {
           {gifts &&
             gifts.slice(0, 6).map((gift) => (
               <div
-                className="wishListItems"
+                className="wishListItems cardBackground"
                 onClick={() => {
                   navigate("/wedding/" + gift._id);
                 }}

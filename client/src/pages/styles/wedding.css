@@ -10,14 +10,14 @@
   margin-top: 0px;
 }
 
-.imagecontainer {
-  height: 300px;
-  width: 75%;
+.imagecontainerW{
+  height:600px;
+  width:56%;
 }
 
-.pictureTitle {
-  color: black;
-  margin-bottom: -45%;
+.pictureTitleW{
+  color:black;
+  margin-bottom: -55%;
   font-family: cursive;
 }
 

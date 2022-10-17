@@ -28,10 +28,10 @@ function Newbaby() {
     <div>
       <div className="newbabyBg">
         <Container
-          className="imagecontainer"
+          className="imagecontainerB"
           style={{ backgroundImage: `url(${imageM})` }}
         >
-          <h1 className="pictureTitle">The Newborn Registry</h1>
+          <h1 className="pictureTitleB">The Newborn Registry</h1>
         </Container>
         <div className="wedding">
           <h1>Our Wish List Items</h1>
