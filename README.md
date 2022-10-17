@@ -1,7 +1,9 @@
 <h1 align="center">The Registry</h1>
-  
-![badge](https://img.shields.io/badge/license-Apache-blue)<br/>
+
+![The Registry](https://user-images.githubusercontent.com/107587452/196089579-04c183a2-0800-41ca-895b-f03dee36b280.jpeg)
+
 ## Table of Contents
+
 - [Description](#description)
 - [Installation](#installation)
 - [Issues](#issues)
@@ -35,11 +37,11 @@ AS an average Joe with an important upcoming event
 <br/>
 I WANT to share my gift registry with my friends and family members
 <br/>
-SO THAT I can provide a list of gift ideas and links to the retailers 
+SO THAT I can provide a list of gift ideas and links to the retailers
 <br/>
 I WANT to also add the option to just give a dollar amount with a credit card
 <br/>
-SO THAT my friends and family members have both options 
+SO THAT my friends and family members have both options
 
 ## Acceptance Criteria: Recipient
 
@@ -59,7 +61,7 @@ THEN I am logged in and directed back to the Homepage
 <br/>
 WHEN I click on Setup New Registry
 <br/>
-THEN I can choose the type of Registry and make it available to my friends and family members 
+THEN I can choose the type of Registry and make it available to my friends and family members
 <br/>
 
 ## Acceptance Criteria: Gifter
@@ -76,7 +78,7 @@ THEN I am presented with the Registry page
 <br/>
 WHEN I click on the "Give Money" button
 <br/>
-THEN I am presented with the "Give Money" input form 
+THEN I am presented with the "Give Money" input form
 <br/>
 WHEN I enter my name
 <br/>
@@ -102,6 +104,7 @@ The Gifters can search for the Registry on the webpage.  When the Gifters reach 
 
 The Gifters information is then available to the Recipient.  The Recipient can use this information to help with writting thank you cards.
 
+The Gifters information is then available to the Receiver. The Receiver can use this information to help with writting thank you cards.
 
 ## License
 
@@ -148,4 +151,3 @@ Christopher Boyle&nbsp;&nbsp;&emsp;github.com/timberhead&nbsp;&nbsp;&nbsp;&emsp;
 <br/>
 
 <h3 align="center">This README was generated with ❤️ by fine folks at the-registry</h3>
-
