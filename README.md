@@ -1,13 +1,7 @@
-<<<<<<< HEAD
-<h1 align="center">Project 3</h1>
-  
-![badge](https://img.shields.io/badge/license-Apache-blue)<br/>
-=======
 <h1 align="center">The Registry</h1>
 
 ![The Registry](https://user-images.githubusercontent.com/107587452/196089579-04c183a2-0800-41ca-895b-f03dee36b280.jpeg)
 
->>>>>>> main
 ## Table of Contents
 
 - [Description](#description)
@@ -25,11 +19,7 @@
 
 ## Description
 
-<<<<<<< HEAD
-Our task is to create a simple application that allows the Receiver to provide friends and family members with a gift registry that provides the opportunity for the Gifter to give a dollar amount gift with a credit card. The Gifter gives their gift along with their name, email, and a message for the Receiver.
-=======
 Our task is to create a simple application that allows the Recipient to provide friends and family members with a gift registry that provides the opportunity for the Gifter to give a dollar amount gift with a credit card.  The Gifter gives their gift along with their name, email, and a message for the Receiver.   
->>>>>>> main
 
 This application will use custom databases to provide updated Gifter data, and a secure credit card processing service.
 
@@ -108,17 +98,11 @@ Then I can enter a dollar amount to give
 
 ## Usage
 
-<<<<<<< HEAD
-The Receviver can login/register on "The Registry" webpage. During the login/register process, the Receiver will select a Wedding Registry, a Graduation Registry, or a New Baby Registry. The Receiver can include links to retailers that they have already registered at on the Registry page of their choice. The Receiver can then include their Registry information in the traditional announcements or invitations.
-
-The Gifters can search for the Registry on the webpage. When the Gifters reach the Registry page for their friend or family member, they can click on the links to the retailers and/or they can give a dollar amount gift with a credit card. If the Gifter chooses to give a dollar amonut gift, they can enter the following information: Name, Email, add a Message, and enter their credit card information via "Stripe".
-=======
 The Recipient can login/register on "The Registry" webpage.  During the login/register process, the Recipient will select a Wedding Registry, a Graduation Registry, or a New Baby Registry.  The Recipient can include links to retailers that they have already registered at on the Registry page of their choice.  The Recipient can then include their Registry information in the traditional announcements or invitations. 
 
 The Gifters can search for the Registry on the webpage.  When the Gifters reach the Registry page for their friend or family member, they can click on the links to the retailers and/or they can give a dollar amount gift with a credit card.  If the Gifter chooses to give a dollar amonut gift, they can enter the following information: Name, Email, add a Message, and enter their credit card information via "Stripe".
 
 The Gifters information is then available to the Recipient.  The Recipient can use this information to help with writting thank you cards.
->>>>>>> main
 
 The Gifters information is then available to the Receiver. The Receiver can use this information to help with writting thank you cards.
 
@@ -144,22 +128,20 @@ https://github.com/kaelinpsalazar
 
 ## Deployed Links:
 
-<<<<<<< HEAD
-<img src="./public/img/.jpeg" alt="" width="500"/>
-=======
 Heroku
 
->>>>>>> main
 
 ## Credits
 
 Sophie Lebron&emsp;&emsp;&emsp;github.com/sclebron&emsp;&emsp;&emsp;&emsp;&emsp;sophieclebron@gmail.com
 <br/>
-Tommy Boileau&nbsp;&emsp;&emsp;github.com/tommybspeed&nbsp;&emsp;&emsp;TommyBspeed@gmail.com
+Thomas Boileau&nbsp;&emsp;&emsp;github.com/tommybspeed&nbsp;&emsp;&emsp;TommyBspeed@gmail.com
 <br/>
 Dylan Griess&emsp;&emsp;&emsp;&emsp;github.com/dylangriess&nbsp;&nbsp;&emsp;&emsp;&emsp;dylangriess@gmail.com
 <br/>
 Matthew Flug&nbsp;&nbsp;&emsp;&emsp;&emsp;github.com/mattflug&emsp;&emsp;&emsp;&emsp;&emsp;mbflug@gmail.com
+<br/>
+Trystan Button&emsp;&emsp;&emsp;github.com/trystan333&emsp;&emsp;&emsp;&emsp;trystan@hey.com
 <br/>
 Kaelin Salazar&nbsp;&emsp;&emsp;&emsp;github.com/kaelinpsalazar&nbsp;&nbsp;&emsp;&emsp;kaelinpsalazar@gmail.com
 <br/>
@@ -168,8 +150,4 @@ Christopher Boyle&nbsp;&nbsp;&emsp;github.com/timberhead&nbsp;&nbsp;&nbsp;&emsp;
 <br/>
 <br/>
 
-<<<<<<< HEAD
-<h3 align="center">This README was generated with ❤️ by fine folks at the-project-3</h3>
-=======
 <h3 align="center">This README was generated with ❤️ by fine folks at the-registry</h3>
->>>>>>> main
