@@ -14,7 +14,7 @@ const WishListItems = () => {
   return (
     <div>
       <Container>
-        <Row>
+        <Row style={{ justifyContent: "center" }}>
           {gifts &&
             gifts.slice(0, 6).map((gift) => (
               <div

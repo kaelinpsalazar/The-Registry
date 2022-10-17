@@ -10,36 +10,29 @@ const MessageList = ({
   if (!messages) {
     return <h3>No Messages Yet</h3>;
   }
-  console.log(messages);
+  console.log("messages in messageList", messages);
 
   return (
     <div>
       {showTitle && <h3>{title}</h3>}
+      <hr style={{ marginLeft: "40px", marginRight: "40px", color: "black" }} />
       {messages &&
         messages.map((message) => (
-          <div key={message._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-dark p-2 m-0">
+          <div key={message._id} className="mb-3">
+            <h6
+              className="
+            card-header text-dark p-0 m-0"
+            >
               {showUsername ? (
-                <Link
-                  className="text-dark"
-                  to={`/profiles/${message.messageAuthor}`}
-                >
-                  {message.messageAuthor} <br />
-                  <span style={{ fontSize: "1rem" }}>
-                    created this message on {message.createdAt}
-                  </span>
-                </Link>
+                `${message.messageAuthor} messaged: ${message.messageText}`
               ) : (
                 <>
                   <span style={{ fontSize: "1rem" }}>
-                    You created this message on {message.createdAt}
+                    You said this message on {message.messageText}
                   </span>
                 </>
               )}
-            </h4>
-            <div className="card-body bg-dark p-2">
-              <p>{message.messageText}</p>
-            </div>
+            </h6>
           </div>
         ))}
     </div>
