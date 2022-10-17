@@ -1,6 +1,6 @@
 import React from "react";
 // import React, { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
@@ -16,7 +16,7 @@ import "./styles/home.css";
 
 function Home() {
   // const [expandHome, setExpandHome] = useState(false);
-  let location = useLocation();
+  // let location = useLocation();
   return (
     <>
       <div className="homeBg">
@@ -30,12 +30,14 @@ function Home() {
                   <Nav.Link href="#home"></Nav.Link>
                   <Nav.Link href="#link"></Nav.Link>
                   <NavDropdown title="push this button" id="basic-nav-dropdown">
-                    <NavDropdown.Item href="/wedding">Wedding</NavDropdown.Item>
-                    <NavDropdown.Item href="/graduation">
-                      Graduation
+                    <NavDropdown.Item>
+                      <Link to="/wedding">Wedding</Link>
                     </NavDropdown.Item>
-                    <NavDropdown.Item href="/newbaby">
-                      New Baby
+                    <NavDropdown.Item>
+                      <Link to="/graduation">Graduation</Link>
+                    </NavDropdown.Item>
+                    <NavDropdown.Item>
+                      <Link to="/newbaby">New Baby</Link>
                     </NavDropdown.Item>
                     {/* <NavDropdown.Divider />
               <NavDropdown.Item href="#action/3.4"></NavDropdown.Item> */}

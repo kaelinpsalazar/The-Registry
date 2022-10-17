@@ -1,11 +1,11 @@
 import React from "react";
-import { Navigate, useParams } from "react-router-dom";
-import { useQuery } from "@apollo/client";
+import { useParams } from "react-router-dom";
+// import { useQuery } from "@apollo/client";
 import "./styles/profile.css";
 import Row from "react-bootstrap/Row";
 
-import { QUERY_RECIPIENT } from "../utils/queries";
-import Auth from "../utils/auth";
+// import { QUERY_RECIPIENT } from "../utils/queries";
+// import Auth from "../utils/auth";
 
 const Profile = () => {
   const { name: userParam } = useParams();

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useQuery, useMutation } from "@apollo/client";
+import { useQuery } from "@apollo/client";
 
-import { ADD_MESSAGE } from "../../utils/mutations";
-import { QUERY_MESSAGES, QUERY_GIFTER } from "../../utils/queries";
+// import { ADD_MESSAGE } from "../../utils/mutations";
+import { QUERY_MESSAGES } from "../../utils/queries";
 
 const GifterInput = () => {
   const [messageAuthor, setMessageAuthor] = useState("");

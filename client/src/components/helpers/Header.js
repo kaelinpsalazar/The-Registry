@@ -4,7 +4,6 @@ import Navbar from "react-bootstrap/Navbar";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 // import Modal from "react-bootstrap/Modal";
-import Nav from "react-bootstrap/Nav";
 import "./styles/header.css";
 import Container from "react-bootstrap/Container";
 function BrandExample() {
