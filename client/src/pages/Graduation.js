@@ -66,7 +66,10 @@ function Graduation() {
             <StripeContainer />
           ) : (
             <>
-              <button onClick={() => setShowItem(true)}>
+              <button
+                className="btn btn-primary justify-content-center m-3"
+                onClick={() => setShowItem(true)}
+              >
                 Donate $100 to The Registry!
               </button>
             </>
