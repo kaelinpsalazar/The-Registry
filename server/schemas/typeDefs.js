@@ -48,7 +48,7 @@ const typeDefs = gql`
     gift(giftId: ID!): Gift
   }
   type Mutation {
-    addUser(username: String!, email: String!, password: String!): Auth
+    addUser(name: String!, email: String!, password: String!): Auth
     login(email: String!, password: String!): Auth
     addGift(
       product: String!

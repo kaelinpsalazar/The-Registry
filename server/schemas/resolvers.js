@@ -30,7 +30,7 @@ const resolvers = {
     },
   },
   Mutation: {
-    addRecipient: async (parent, { name, email, password }) => {
+    addUser: async (parent, { name, email, password }) => {
       const recipient = await Recipient.create({ name, email, password });
       const token = signToken(recipient);
       return { token, recipient };
