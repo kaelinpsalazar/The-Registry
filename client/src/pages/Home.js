@@ -51,13 +51,14 @@ function Home() {
               The Registry is a simple application that allows a couple, or a
               recent graduate to provide friends and family members access to
               their gift registry. A traditional gift registry is just a list of
-              gift ideas from specific retail stores. Friends and family members
-              can pick gift items from the list to celebrate the special event.
-              The Registry application includes the gift registry with a link to
-              that retail store. The applicaion also displays the top three
-              wishlist items, and a feature that allows for dollar amout gifts
-              made with a credit card. The gift giver can also input their name,
-              email, and a short message for the Recipient.
+              gift ideas from specific retail stores. This application provides
+              a genuine connection from the gifter to recipient. Friends and
+              family members can pick gift items from the list to celebrate the
+              special event. The Registry application includes the gift registry
+              with a link to that retail store. The application also displays
+              the top six wishlist items, and a feature that allows for dollar
+              amount gifts made with a credit card. The gift giver can also
+              input their name, email, and a short message for the Recipient.
             </p>
           </div>
         </div>

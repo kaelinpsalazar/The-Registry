@@ -49,9 +49,9 @@ const GifterInput = () => {
     // } catch (err) {
     //   console.error(err);
     // } finally {
-    //   // setMessageAuthor("");
-    //   // setEmail("");
-    //   // setMessageText("");
+    setMessageAuthor("");
+    setEmail("");
+    setMessageText("");
     // }
   };
 
@@ -69,7 +69,9 @@ const GifterInput = () => {
                 Name
               </label>
               <input
+                name="messageAuthor"
                 type="name"
+                value={messageAuthor}
                 className="form-control"
                 id="inputName"
                 onChange={(e) => setMessageAuthor(e.target.value)}
@@ -80,8 +82,10 @@ const GifterInput = () => {
                 Email address
               </label>
               <input
+                name="email"
                 type="email"
                 className="form-control"
+                value={email}
                 id="inputEmail"
                 aria-describedby="emailHelp"
                 onChange={(e) => setEmail(e.target.value)}

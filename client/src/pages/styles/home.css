@@ -35,20 +35,6 @@ Form {
 }
 
 .aboutRegistry {
-
-display: flex;
-width: 70%;
-background-color: white;
-border-style: solid;
-border-color: rgb(151, 102, 151);
-color: black;
-border-radius: 7px;
-border-width: 3px;
-padding-top: 13px;
-padding-bottom: 5px;
-padding-left: 13px;
-padding-right: 13px;
-
   display: flex;
   width: 70%;
   background-color: white;
@@ -65,7 +51,7 @@ padding-right: 13px;
 
 .aboutRegistry p {
   line-height: 50px;
-  font-size: 1.35rem;
+  font-size: 1.3rem;
 }
 
 .pictureTitle {
