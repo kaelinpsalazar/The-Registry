@@ -69,6 +69,21 @@
 .wishListItem h1 {
   font-size: 25px;
 }
+
+.btn-1,
+.btn-2,
+.btn-3 {
+  background-color: white;
+  color: purple;
+}
+
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover {
+  background-color: #8064a2;
+  color: white;
+}
+
 @media only screen and (max-width: 1200px) {
   .wishListList {
     grid-template-columns: 1fr 1fr;

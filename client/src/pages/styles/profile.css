@@ -1,0 +1,31 @@
+.containerProf {
+  background-color: #8064a2;
+  margin: 50px;
+  padding: 50px;
+}
+
+.wishlist {
+  width: 50%;
+  justify-content: center;
+}
+
+.list-header {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.card-text {
+  font-size: 1.5rem;
+}
+
+.btn-1 {
+  background-color: #8064a2;
+  color: white;
+  border: #8064a2 solid 1px;
+}
+
+.btn-1:hover {
+  background-color: white;
+  color: purple;
+  border: #8064a2 solid 1px;
+}

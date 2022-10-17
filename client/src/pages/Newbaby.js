@@ -2,7 +2,6 @@ import React from "react";
 import imageM from "../assets/images/imageM.jpg";
 
 import WishListItems from "../components/helpers/WishListItems";
-import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { QUERY_GIFTS, QUERY_MESSAGES } from "../utils/queries";

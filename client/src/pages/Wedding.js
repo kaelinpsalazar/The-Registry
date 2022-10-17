@@ -4,14 +4,12 @@ import { Elements } from "@stripe/react-stripe-js";
 import imageK from "../assets/images/imageK.jpg";
 
 import WishListItems from "../components/helpers/WishListItems";
-import retaillinks from "../components/helpers/Retaillinks";
 import { useQuery } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import { QUERY_GIFTS, QUERY_MESSAGES } from "../utils/queries";
 import GifterInput from "../components/helpers/GifterInput";
 import MessageList from "../components/helpers/MessageList";
 import StripeContainer from "../components/helpers/StripeContainer";
-
 import "./styles/wedding.css";
 import Container from "react-bootstrap/esm/Container";
 
