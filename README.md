@@ -124,11 +124,11 @@ npm test
 
 Link to our Github repository:
 <br/>
-https://github.com/kaelinpsalazar
+https://github.com/kaelinpsalazar/The-Registry
 
 ## Deployed Links:
 
-Heroku
+https://whispering-coast-62095.herokuapp.com/
 
 
 ## Credits
